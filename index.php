@@ -1,7 +1,20 @@
-
 <?php
+// This will be the main home page of the site.
 
-echo "the site is working"
+require 'vendor/autoload.php';
+use mtgsdk\Card;
+use mtgsdk\QueryBuilder;
+use mtgsdk\Set;
+use mtgsdk\Subtype;
+use mtgsdk\Supertype;
+use mtgsdk\Type;
+
+
+$myCard = card::find(4800);
+
+var_dump($myCard);
+
+
 ?>
 
 
