@@ -15,23 +15,30 @@
 <body>
     
     <div class ="container">
-
-        <div class="form-box" id="login-form">
-
+        <div class="form-box active" id="login-form">
             <form action="">
-
                 <h2>Login</h2>
                 <input type="email" name="email" placeholder="Email" required>
                 <input type="password" name="password" placeholder="Password" required>
                 <button type="submit" name="login">Login</button>
-                <p>Don't have an account?  <a href="#">Register</a></p> 
-
+                <p>Don't have an account?  <a href="#" onclick="swapForms('register-form')">Register</a></p> 
             </form>
-
         </div>
 
+        <div class="form-box" id="register-form">
+            <form action="">
 
+                <h2>Register</h2>
+                <input type="text" name="username" placeholder="Username" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="password" name="password" placeholder="Password" required>
+                <button type="submit" name="register">Register</button>
+                <p>Already have an account?  <a href="#" onclick="swapForms('login-form')">Login</a></p> 
+            </form>
+        </div>
     </div>
+
+    <script src="switchLoginRegister.js"> </script>
 
 </body>
 </html>
