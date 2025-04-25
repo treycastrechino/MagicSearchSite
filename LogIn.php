@@ -2,6 +2,8 @@
     //This page will be used to log in.
     //Should somebody already be logged in it should redirect them to the home page with a "already logged in" message
 
+
+
 ?>
 
 <!DOCTYPE html>
@@ -12,9 +14,14 @@
     <title>Login Page</title>
     <link rel="stylesheet" href="loginStyle.css">
 </head>
-<body>
+
+
+<body> 
+
+
     
     <div class ="container">
+        <?php include("siteHeader.php") ?>
         <div class="form-box active" id="login-form">
             <form action="">
                 <h2>Login</h2>
@@ -36,9 +43,14 @@
                 <p>Already have an account?  <a href="#" onclick="swapForms('login-form')">Login</a></p> 
             </form>
         </div>
+        <?php include("siteFooter.php")?>
     </div>
 
     <script src="switchLoginRegister.js"> </script>
 
 </body>
+
+    
+
 </html>
+

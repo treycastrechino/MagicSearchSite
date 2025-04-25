@@ -11,7 +11,6 @@
 
 
 body {
-    display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
@@ -19,19 +18,17 @@ body {
     color: #333;
 }
 
-/* this is to prevent the layout from being too close to the edge of the screen */
-.container {
-    margin: 0 15px;
-}
-
 
 .form-box {
-    width: 100%; /* ensure that the box fits the entire container*/
+    justify-content: center;
+    align-items: center;
+    width: 50%;
     max-width: 450px; /* set max just in case */
     padding: 30px; /* ensure content doesn't stick to the edges*/
     background: #fff;
     border-radius: 10px; /* gives rounded corners */
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin: 5px auto;
     display: none;
 }
 
