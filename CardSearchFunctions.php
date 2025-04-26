@@ -90,6 +90,13 @@ Example:name=nissa, worldwaker|jace|ajani, caller More examples: colors=red,whit
     "multiverseid" - The multiverseid of the card on Wizard’s Gatherer web page. Cards from sets that do not exist on Gatherer will NOT have 
     a multiverseid. Sets not on Gatherer are: ATH, ITP, DKM, RQS, DPA and all sets with a 4 letter code that starts with a lowercase ‘p’.
 
+
+    Note:
+
+        At the time of creation the API card collection only goes up to the set Outlaws of Thunder Junction
+
+        It is also missing images for certain promo or alternate art cards.
+
 */
 
 
@@ -101,7 +108,6 @@ const ENDPOINT = "https://api.magicthegathering.io/v1/cards?";
 function returnCardJson($pSearchConditions){
 
     $searchQuery = ENDPOINT . $pSearchConditions;
-    echo $searchQuery;
     $response = json_decode(file_get_contents("$searchQuery"), true);
 
     return $response;
@@ -112,8 +118,6 @@ function addInitialSearchCondition($condition, $text){
 
     $SearchCondition = $condition . '='. $text;
 
-    echo 'my Search URL addition after add search condition is:  ' . $SearchCondition;
-
     return $SearchCondition;
 
 }
@@ -121,8 +125,6 @@ function addInitialSearchCondition($condition, $text){
 function addAdditionalSearchConditions($SearchConditions,$condition, $text){
 
     $SearchConditions = $SearchConditions . '&' . $condition . '='. $text;
-
-    echo 'my Search URL addition after add search condition is:  ' . $SearchConditions;
 
     return $SearchConditions;
 
@@ -133,6 +135,28 @@ function showCardImage($cardJsonObject, $cardIndex){
     $myImageUrl = $cardJsonObject['cards']["$cardIndex"]['imageUrl'];
         $urlString = '<img src="'. $myImageUrl. '"/>';
         echo "$urlString";
+}
+
+function showAllCardsFromSearch($cardJson){
+
+    $numOfCards = count($cardJson['cards']);
+    echo $numOfCards;
+    echo '<br>';
+    for($i = 0; $i < $numOfCards; $i++){
+
+        if(array_key_exists('imageUrl',$cardJson['cards'][$i])){
+
+            showCardImage($cardJson, $i);
+            echo '<br>';
+        }
+        else{
+
+            echo "No image found for " . $cardJson['cards'][$i]['name']. ' from ' . $cardJson['cards'][$i]['setName'] . '<br>';
+            echo '<img src="Images/PepeHands.png"/>';
+            echo '<br>';
+        }
+    }
+
 }
 
 ?>

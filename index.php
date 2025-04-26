@@ -27,10 +27,10 @@ include("cardSearchFunctions.php");
 
         <?php 
 
-        $searchConditions = addInitialSearchCondition('toughness','13');
-        $searchConditions = addAdditionalSearchConditions($searchConditions,'colors','b');
+        $searchConditions = addInitialSearchCondition('set','MIR');
+        $searchConditions = addAdditionalSearchConditions($searchConditions,'colors',"b,u");
         $testCards = returnCardJson($searchConditions);
-        showCardImage($testCards,0);
+        showAllCardsFromSearch($testCards);
 
         ?>
 
