@@ -1,0 +1,1223 @@
+{
+    "cards": [
+        {
+            "name": "Combustible Gearhulk",
+            "manaCost": "{4}{R}{R}",
+            "cmc": 6,
+            "colors": [
+                "R"
+            ],
+            "colorIdentity": [
+                "R"
+            ],
+            "type": "Artifact Creature — Construct",
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "subtypes": [
+                "Construct"
+            ],
+            "rarity": "Mythic",
+            "set": "C21",
+            "setName": "Commander 2021",
+            "text": "First strike\nWhen Combustible Gearhulk enters the battlefield, target opponent may have you draw three cards. If the player doesn't, you mill three cards, then Combustible Gearhulk deals damage to that player equal to the total mana value of those cards.",
+            "artist": "Daarken",
+            "number": "163",
+            "power": "6",
+            "toughness": "6",
+            "layout": "normal",
+            "multiverseid": "519198",
+            "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=519198&type=card",
+            "rulings": [
+                {
+                    "date": "2016-09-20",
+                    "text": "If any of the cards put into your graveyard have {X} in their mana cost, X is considered to be 0."
+                },
+                {
+                    "date": "2016-09-20",
+                    "text": "If you have fewer than three cards in your library, the opponent may choose to have you draw three cards. If so, you'll lose the game as state-based actions are performed."
+                },
+                {
+                    "date": "2016-09-20",
+                    "text": "While Combustible Gearhulk's triggered ability is resolving, no player may take any actions other than those specified by the Gearhulk. Once the opponent makes a choice, players can't cast spells or activate abilities until after the cards are drawn or put into the graveyard and damage has been dealt (if applicable)."
+                }
+            ],
+            "foreignNames": [
+                {
+                    "name": "Brandgefährlicher Mechakoloss",
+                    "text": "Erstschlag\nWenn der Brandgefährliche Mechakoloss ins Spiel kommt, kann dich ein Gegner deiner Wahl drei Karten ziehen lassen. Falls er dies nicht tut, millst du drei Karten. Dann fügt der Brandgefährliche Mechakoloss dem Spieler Schadenspunkte in Höhe der Summe der Manabeträge jener Karten zu.",
+                    "type": "Artefaktkreatur — Konstrukt",
+                    "flavor": null,
+                    "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=519446&type=card",
+                    "language": "German",
+                    "identifiers": {
+                        "scryfallId": "75ad80c8-dba7-4ef1-9e50-91737051fe1d",
+                        "multiverseId": 519446
+                    },
+                    "multiverseid": 519446
+                },
+                {
+                    "name": "Mecatitán combustible",
+                    "text": "Daña primero.\nCuando el Mecatitán combustible entre al campo de batalla, el oponente objetivo puede hacer que robes tres cartas. Si ese jugador no lo hace, mueles tres cartas. Luego, el Mecatitán combustible hace una cantidad de daño a ese jugador igual al valor de maná total de esas cartas.",
+                    "type": "Criatura artefacto — Constructo",
+                    "flavor": null,
+                    "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=519694&type=card",
+                    "language": "Spanish",
+                    "identifiers": {
+                        "scryfallId": "c1e4324c-a76c-41f5-ad2b-fa8ad7c07e2f",
+                        "multiverseId": 519694
+                    },
+                    "multiverseid": 519694
+                },
+                {
+                    "name": "Carcasse mécanique combustible",
+                    "text": "Initiative\nQuand la Carcasse mécanique combustible arrive sur le champ de bataille, un adversaire ciblé peut vous faire piocher trois cartes. Si le joueur ne le fait pas, vous meulez trois cartes, puis la Carcasse mécanique combustible inflige à ce joueur un nombre de blessures égal à la valeur de mana totale de ces cartes.",
+                    "type": "Créature-artefact : construction",
+                    "flavor": null,
+                    "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=519942&type=card",
+                    "language": "French",
+                    "identifiers": {
+                        "scryfallId": "69581883-a0e5-46a1-bd8c-d08ed1c83699",
+                        "multiverseId": 519942
+                    },
+                    "multiverseid": 519942
+                },
+                {
+                    "name": "Meccatitano Combustibile",
+                    "text": "Attacco improvviso\nQuando il Meccatitano Combustibile entra nel campo di battaglia, un avversario bersaglio può farti pescare tre carte. Se non lo fa, macini tre carte, poi il Meccatitano Combustibile infligge a quel giocatore danno pari al valore di mana totale di quelle carte.",
+                    "type": "Creatura Artefatto — Costrutto",
+                    "flavor": null,
+                    "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=520190&type=card",
+                    "language": "Italian",
+                    "identifiers": {
+                        "scryfallId": "d15417b4-f2ec-4091-a319-a43b5b0bb0a9",
+                        "multiverseId": 520190
+                    },
+                    "multiverseid": 520190
+                },
+                {
+                    "name": "焼却の機械巨人",
+                    "text": "先制攻撃\n焼却の機械巨人が戦場に出たとき、対戦相手１人を対象とする。そのプレイヤーは「あなたはカード３枚を引く。」を選んでもよい。そうしないなら、あなたはカード３枚を切削し、その後焼却の機械巨人はそのプレイヤーに、それらのカードのマナ総量の合計に等しい点数のダメージを与える。",
+                    "type": "アーティファクト・クリーチャー — 構築物",
+                    "flavor": null,
+                    "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=520438&type=card",
+                    "language": "Japanese",
+                    "identifiers": {
+                        "scryfallId": "91ed6f2d-28f6-48f6-a4c8-7416093f4808",
+                        "multiverseId": 520438
+                    },
+                    "multiverseid": 520438
+                },
+                {
+                    "name": "Mecanotitã Combustível",
+                    "text": "Iniciativa\nQuando Mecanotitã Combustível entra no campo de batalha, o oponente alvo pode fazer com que você compre três cards. Se o jogador não o fizer, você triturará três cards e, depois, Mecanotitã Combustível causará àquele jogador dano igual ao valor de mana total daqueles cards.",
+                    "type": "Criatura Artefato — Constructo",
+                    "flavor": null,
+                    "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=520686&type=card",
+                    "language": "Portuguese (Brazil)",
+                    "identifiers": {
+                        "scryfallId": "5ceba7fd-88f5-4097-ab57-4128a8daccad",
+                        "multiverseId": 520686
+                    },
+                    "multiverseid": 520686
+                },
+                {
+                    "name": "Мехагигант Воспламенения",
+                    "text": "Первый удар\nКогда Мехагигант Воспламенения выходит на поле битвы, целевой оппонент может заставить вас взять три карты. Если тот игрок не делает этого, вы скручиваете три карты, затем Мехагигант Воспламенения наносит тому игроку повреждения, равные суммарной мановой ценности тех карт.",
+                    "type": "Артефакт Существо — Конструкция",
+                    "flavor": null,
+                    "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=520934&type=card",
+                    "language": "Russian",
+                    "identifiers": {
+                        "scryfallId": "2a43386a-4a40-4042-9df0-f38392448313",
+                        "multiverseId": 520934
+                    },
+                    "multiverseid": 520934
+                },
+                {
+                    "name": "易燃巨械",
+                    "text": "先攻\n当易燃巨械进战场时，目标对手可以令你抓三张牌。若该牌手未如此作，则你磨三张牌，然后易燃巨械对该牌手造成伤害，其数量等同于这些牌法术力值的总和。",
+                    "type": "神器生物 ～组构体",
+                    "flavor": null,
+                    "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=521182&type=card",
+                    "language": "Chinese Simplified",
+                    "identifiers": {
+                        "scryfallId": "ec482021-114e-4bd7-a2e4-00cfa7c87b03",
+                        "multiverseId": 521182
+                    },
+                    "multiverseid": 521182
+                },
+                {
+                    "name": "易燃巨械",
+                    "text": "先攻\n當易燃巨械進戰場時，目標對手可以令你抽三張牌。若該玩家未如此作，則你磨三張牌，然後易燃巨械對該玩家造成傷害，其數量等同於這些牌魔法力值的總和。",
+                    "type": "神器生物 ～組構體",
+                    "flavor": null,
+                    "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=521430&type=card",
+                    "language": "Chinese Traditional",
+                    "identifiers": {
+                        "scryfallId": "025cda66-36b9-489b-ad64-e5a1551290f3",
+                        "multiverseId": 521430
+                    },
+                    "multiverseid": 521430
+                }
+            ],
+            "printings": [
+                "C21",
+                "KLD",
+                "KLR",
+                "MPS",
+                "PKLD",
+                "PLST",
+                "SCD"
+            ],
+            "originalText": "First strike\nWhen Combustible Gearhulk enters the battlefield, target opponent may have you draw three cards. If the player doesn't, you mill three cards, then Combustible Gearhulk deals damage to that player equal to the total mana value of those cards.",
+            "originalType": "Artifact Creature — Construct",
+            "legalities": [
+                {
+                    "format": "Brawl",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Commander",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Duel",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Explorer",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Gladiator",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Historic",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Legacy",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Modern",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Oathbreaker",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Penny",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Pioneer",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Timeless",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Vintage",
+                    "legality": "Legal"
+                }
+            ],
+            "id": "35b406b3-b92b-5568-8e6c-abfbcdde984f"
+        },
+        {
+            "name": "Combustible Gearhulk",
+            "manaCost": "{4}{R}{R}",
+            "cmc": 6,
+            "colors": [
+                "R"
+            ],
+            "colorIdentity": [
+                "R"
+            ],
+            "type": "Artifact Creature — Construct",
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "subtypes": [
+                "Construct"
+            ],
+            "rarity": "Mythic",
+            "set": "KLD",
+            "setName": "Kaladesh",
+            "text": "First strike\nWhen Combustible Gearhulk enters the battlefield, target opponent may have you draw three cards. If the player doesn't, you mill three cards, then Combustible Gearhulk deals damage to that player equal to the total mana value of those cards.",
+            "artist": "Daarken",
+            "number": "112",
+            "power": "6",
+            "toughness": "6",
+            "layout": "normal",
+            "multiverseid": "417685",
+            "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=417685&type=card",
+            "rulings": [
+                {
+                    "date": "2016-09-20",
+                    "text": "If any of the cards put into your graveyard have {X} in their mana cost, X is considered to be 0."
+                },
+                {
+                    "date": "2016-09-20",
+                    "text": "If you have fewer than three cards in your library, the opponent may choose to have you draw three cards. If so, you'll lose the game as state-based actions are performed."
+                },
+                {
+                    "date": "2016-09-20",
+                    "text": "While Combustible Gearhulk's triggered ability is resolving, no player may take any actions other than those specified by the Gearhulk. Once the opponent makes a choice, players can't cast spells or activate abilities until after the cards are drawn or put into the graveyard and damage has been dealt (if applicable)."
+                }
+            ],
+            "foreignNames": [
+                {
+                    "name": "Brandgefährlicher Mechakoloss",
+                    "text": "Erstschlag\nWenn der Brandgefährliche Mechakoloss ins Spiel kommt, kann dich ein Gegner deiner Wahl drei Karten ziehen lassen. Falls er dies nicht tut, lege die obersten drei Karten deiner Bibliothek auf deinen Friedhof. Dann fügt der Brandgefährliche Mechakoloss diesem Spieler Schadenspunkte in Höhe der Summe der umgewandelten Manakosten jener Karten zu.",
+                    "type": "Artefaktkreatur — Konstrukt",
+                    "flavor": null,
+                    "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=418477&type=card",
+                    "language": "German",
+                    "identifiers": {
+                        "scryfallId": "7fe309ca-a9ae-4a0f-87bf-d26f24c0020d",
+                        "multiverseId": 418477
+                    },
+                    "multiverseid": 418477
+                },
+                {
+                    "name": "Mecatitán combustible",
+                    "text": "Daña primero.\nCuando el Mecatitán combustible entre al campo de batalla, el oponente objetivo puede hacer que robes tres cartas. Si ese jugador no lo hace, pon las tres primeras cartas de tu biblioteca en tu cementerio. Luego, el Mecatitán combustible hace una cantidad de daño a ese jugador igual al coste de maná convertido total de esas cartas.",
+                    "type": "Criatura artefacto — Constructo",
+                    "flavor": null,
+                    "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=420325&type=card",
+                    "language": "Spanish",
+                    "identifiers": {
+                        "scryfallId": "726cd56b-67a7-4a4a-8ddd-05212d4723b0",
+                        "multiverseId": 420325
+                    },
+                    "multiverseid": 420325
+                },
+                {
+                    "name": "Carcasse mécanique combustible",
+                    "text": "Initiative\nQuand la Carcasse mécanique combustible arrive sur le champ de bataille, l'adversaire ciblé peut vous faire piocher trois cartes. Si le joueur ne le fait pas, mettez les trois cartes du dessus de votre bibliothèque dans votre cimetière, puis la Carcasse mécanique combustible inflige à ce joueur un nombre de blessures égal au coût converti de mana total de ces cartes.",
+                    "type": "Créature-artefact : construction",
+                    "flavor": null,
+                    "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=418741&type=card",
+                    "language": "French",
+                    "identifiers": {
+                        "scryfallId": "adfe0866-5e40-4d34-ae6f-8a9f95ff32b8",
+                        "multiverseId": 418741
+                    },
+                    "multiverseid": 418741
+                },
+                {
+                    "name": "Meccatitano Combustibile",
+                    "text": "Attacco improvviso\nQuando il Meccatitano Combustibile entra nel campo di battaglia, un avversario bersaglio può farti pescare tre carte. Se non lo fa, metti le prime tre carte del tuo grimorio nel tuo cimitero, poi il Meccatitano Combustibile infligge a quel giocatore danno pari al costo di mana convertito totale di quelle carte.",
+                    "type": "Creatura Artefatto — Costrutto",
+                    "flavor": null,
+                    "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=419005&type=card",
+                    "language": "Italian",
+                    "identifiers": {
+                        "scryfallId": "69e90ca5-3fc6-4774-bb94-44d02d4a83e9",
+                        "multiverseId": 419005
+                    },
+                    "multiverseid": 419005
+                },
+                {
+                    "name": "焼却の機械巨人",
+                    "text": "先制攻撃\n焼却の機械巨人が戦場に出たとき、対戦相手１人を対象とする。そのプレイヤーは「あなたはカードを３枚引く。」を選んでもよい。そうしないなら、あなたのライブラリーの一番上からカードを３枚あなたの墓地に置き、その後焼却の機械巨人はそのプレイヤーに、それらのカードの点数で見たマナ・コストの合計に等しい点数のダメージを与える。",
+                    "type": "アーティファクト・クリーチャー — 構築物",
+                    "flavor": null,
+                    "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=419269&type=card",
+                    "language": "Japanese",
+                    "identifiers": {
+                        "scryfallId": "0a4ef31a-258b-4c2d-af77-926a9ecf9af3",
+                        "multiverseId": 419269
+                    },
+                    "multiverseid": 419269
+                },
+                {
+                    "name": "화염의 톱니거신병",
+                    "text": "선제공격\n화염의 톱니거신병이 전장에 들어올 때, 상대를 목표로 정한다. 그 상대는 당신에게 카드 세 장을 뽑게 할 수 있다. 그 플레이어가 그렇게 하지 않으면, 당신의 서고 맨 위의 카드 세 장을 당신의 무덤에 넣은 후, 화염의 톱니거신병은 그 카드들의 전환마나비용의 총합만큼 그 플레이어에게 피해를 입힌다.",
+                    "type": "마법물체 생물 — 자동기계",
+                    "flavor": null,
+                    "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=419533&type=card",
+                    "language": "Korean",
+                    "identifiers": {
+                        "scryfallId": "536aaa8e-f46c-4901-8c56-cf47473e9786",
+                        "multiverseId": 419533
+                    },
+                    "multiverseid": 419533
+                },
+                {
+                    "name": "Mecanotitã Combustível",
+                    "text": "Iniciativa\nQuando Mecanotitã Combustível entra no campo de batalha, o oponente alvo pode fazer com que você compre três cards. Se o jogador não fizer isso, coloque os três cards do topo de seu grimório em seu cemitério. Em seguida, Mecanotitã Combustível causa àquele jogador uma quantidade de dano igual ao custo de mana convertido daqueles cards.",
+                    "type": "Criatura Artefato — Constructo",
+                    "flavor": null,
+                    "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=419797&type=card",
+                    "language": "Portuguese (Brazil)",
+                    "identifiers": {
+                        "scryfallId": "0d315653-24db-404d-9b0f-5fb7da257598",
+                        "multiverseId": 419797
+                    },
+                    "multiverseid": 419797
+                },
+                {
+                    "name": "Мехагигант Воспламенения",
+                    "text": "Первый удар\nКогда Мехагигант Воспламенения выходит на поле битвы, целевой оппонент может заставить вас взять три карты. Если тот игрок не делает этого, положите три верхние карты вашей библиотеки на ваше кладбище, затем Мехагигант Воспламенения наносит тому игроку повреждения, равные суммарной конвертированной мана-стоимости тех карт.",
+                    "type": "Артефакт Существо — Конструкция",
+                    "flavor": null,
+                    "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=420061&type=card",
+                    "language": "Russian",
+                    "identifiers": {
+                        "scryfallId": "50e4dac2-7654-4006-9c6e-f85bb44158d1",
+                        "multiverseId": 420061
+                    },
+                    "multiverseid": 420061
+                },
+                {
+                    "name": "易燃巨械",
+                    "text": "先攻\n当易燃巨械进战场时，目标对手可以令你抓三张牌。若该牌手未如此作，则将你牌库顶的三张牌置入你的坟墓场，然后易燃巨械对该牌手造成伤害，其数量等同于这些牌总法术力费用的总和。",
+                    "type": "神器生物～组构体",
+                    "flavor": null,
+                    "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=417949&type=card",
+                    "language": "Chinese Simplified",
+                    "identifiers": {
+                        "scryfallId": "2cf077ea-b5e7-497b-8b02-4c3f4e951478",
+                        "multiverseId": 417949
+                    },
+                    "multiverseid": 417949
+                },
+                {
+                    "name": "易燃巨械",
+                    "text": "先攻\n當易燃巨械進戰場時，目標對手可以令你抽三張牌。若該玩家未如此作，則將你牌庫頂的三張牌置入你的墳墓場，然後易燃巨械對該玩家造成傷害，其數量等同於這些牌總魔法力費用的總和。",
+                    "type": "神器生物～組構體",
+                    "flavor": null,
+                    "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=418213&type=card",
+                    "language": "Chinese Traditional",
+                    "identifiers": {
+                        "scryfallId": "73d8019c-7161-4d31-af38-0c9a590799e9",
+                        "multiverseId": 418213
+                    },
+                    "multiverseid": 418213
+                }
+            ],
+            "printings": [
+                "C21",
+                "KLD",
+                "KLR",
+                "MPS",
+                "PKLD",
+                "PLST",
+                "SCD"
+            ],
+            "originalText": "First strike\nWhen Combustible Gearhulk enters the battlefield, target opponent may have you draw three cards. If the player doesn't, put the top three cards of your library into your graveyard, then Combustible Gearhulk deals damage to that player equal to the total converted mana cost of those cards.",
+            "originalType": "Artifact Creature — Construct",
+            "legalities": [
+                {
+                    "format": "Brawl",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Commander",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Duel",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Explorer",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Gladiator",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Historic",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Legacy",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Modern",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Oathbreaker",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Penny",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Pioneer",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Timeless",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Vintage",
+                    "legality": "Legal"
+                }
+            ],
+            "id": "d4be3ea7-77ad-588c-96fa-f994831adeb5"
+        },
+        {
+            "name": "Combustible Gearhulk",
+            "manaCost": "{4}{R}{R}",
+            "cmc": 6,
+            "colors": [
+                "R"
+            ],
+            "colorIdentity": [
+                "R"
+            ],
+            "type": "Artifact Creature — Construct",
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "subtypes": [
+                "Construct"
+            ],
+            "rarity": "Mythic",
+            "set": "KLR",
+            "setName": "Kaladesh Remastered",
+            "text": "First strike\nWhen Combustible Gearhulk enters the battlefield, target opponent may have you draw three cards. If the player doesn't, you mill three cards, then Combustible Gearhulk deals damage to that player equal to the total mana value of those cards.",
+            "artist": "Daarken",
+            "number": "120",
+            "power": "6",
+            "toughness": "6",
+            "layout": "normal",
+            "multiverseid": "547926",
+            "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=547926&type=card",
+            "rulings": [
+                {
+                    "date": "2016-09-20",
+                    "text": "If any of the cards put into your graveyard have {X} in their mana cost, X is considered to be 0."
+                },
+                {
+                    "date": "2016-09-20",
+                    "text": "If you have fewer than three cards in your library, the opponent may choose to have you draw three cards. If so, you'll lose the game as state-based actions are performed."
+                },
+                {
+                    "date": "2016-09-20",
+                    "text": "While Combustible Gearhulk's triggered ability is resolving, no player may take any actions other than those specified by the Gearhulk. Once the opponent makes a choice, players can't cast spells or activate abilities until after the cards are drawn or put into the graveyard and damage has been dealt (if applicable)."
+                }
+            ],
+            "printings": [
+                "C21",
+                "KLD",
+                "KLR",
+                "MPS",
+                "PKLD",
+                "PLST",
+                "SCD"
+            ],
+            "originalText": "First strike\nWhen Combustible Gearhulk enters the battlefield, target opponent may have you draw three cards. If the player doesn't, you mill three cards, then Combustible Gearhulk deals damage to that player equal to the total converted mana cost of those cards.",
+            "originalType": "Artifact Creature — Construct",
+            "legalities": [
+                {
+                    "format": "Brawl",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Commander",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Duel",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Explorer",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Gladiator",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Historic",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Legacy",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Modern",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Oathbreaker",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Penny",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Pioneer",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Timeless",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Vintage",
+                    "legality": "Legal"
+                }
+            ],
+            "id": "2ccf6a94-708e-567d-96c1-c932435bedc2"
+        },
+        {
+            "name": "Combustible Gearhulk",
+            "manaCost": "{4}{R}{R}",
+            "cmc": 6,
+            "colors": [
+                "R"
+            ],
+            "colorIdentity": [
+                "R"
+            ],
+            "type": "Artifact Creature — Construct",
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "subtypes": [
+                "Construct"
+            ],
+            "rarity": "Special",
+            "set": "MPS",
+            "setName": "Kaladesh Inventions",
+            "text": "First strike\nWhen Combustible Gearhulk enters the battlefield, target opponent may have you draw three cards. If the player doesn't, you mill three cards, then Combustible Gearhulk deals damage to that player equal to the total mana value of those cards.",
+            "artist": "Greg Opalinski",
+            "number": "4",
+            "power": "6",
+            "toughness": "6",
+            "layout": "normal",
+            "multiverseid": "420591",
+            "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=420591&type=card",
+            "rulings": [
+                {
+                    "date": "2016-09-20",
+                    "text": "If any of the cards put into your graveyard have {X} in their mana cost, X is considered to be 0."
+                },
+                {
+                    "date": "2016-09-20",
+                    "text": "If you have fewer than three cards in your library, the opponent may choose to have you draw three cards. If so, you'll lose the game as state-based actions are performed."
+                },
+                {
+                    "date": "2016-09-20",
+                    "text": "While Combustible Gearhulk's triggered ability is resolving, no player may take any actions other than those specified by the Gearhulk. Once the opponent makes a choice, players can't cast spells or activate abilities until after the cards are drawn or put into the graveyard and damage has been dealt (if applicable)."
+                }
+            ],
+            "printings": [
+                "C21",
+                "KLD",
+                "KLR",
+                "MPS",
+                "PKLD",
+                "PLST",
+                "SCD"
+            ],
+            "originalText": "First strike\nWhen Combustible Gearhulk enters the battlefield, target opponent may have you draw three cards. If the player doesn't, put the top three cards of your library into your graveyard, then Combustible Gearhulk deals damage to that player equal to the total converted mana cost of those cards.",
+            "originalType": "Artifact Creature — Construct",
+            "legalities": [
+                {
+                    "format": "Brawl",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Commander",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Duel",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Explorer",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Gladiator",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Historic",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Legacy",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Modern",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Oathbreaker",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Penny",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Pioneer",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Timeless",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Vintage",
+                    "legality": "Legal"
+                }
+            ],
+            "id": "784bb4a0-a98b-5f19-8e13-b5f2bcff3394"
+        },
+        {
+            "name": "Combustible Gearhulk",
+            "manaCost": "{4}{R}{R}",
+            "cmc": 6,
+            "colors": [
+                "R"
+            ],
+            "colorIdentity": [
+                "R"
+            ],
+            "type": "Artifact Creature — Construct",
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "subtypes": [
+                "Construct"
+            ],
+            "rarity": "Mythic",
+            "set": "PKLD",
+            "setName": "Kaladesh Promos",
+            "text": "First strike\nWhen Combustible Gearhulk enters the battlefield, target opponent may have you draw three cards. If the player doesn't, you mill three cards, then Combustible Gearhulk deals damage to that player equal to the total mana value of those cards.",
+            "artist": "Daarken",
+            "number": "112p",
+            "power": "6",
+            "toughness": "6",
+            "layout": "normal",
+            "variations": [
+                "6531b101-9242-51ae-b212-5cddb15377ad"
+            ],
+            "rulings": [
+                {
+                    "date": "2016-09-20",
+                    "text": "If any of the cards put into your graveyard have {X} in their mana cost, X is considered to be 0."
+                },
+                {
+                    "date": "2016-09-20",
+                    "text": "If you have fewer than three cards in your library, the opponent may choose to have you draw three cards. If so, you'll lose the game as state-based actions are performed."
+                },
+                {
+                    "date": "2016-09-20",
+                    "text": "While Combustible Gearhulk's triggered ability is resolving, no player may take any actions other than those specified by the Gearhulk. Once the opponent makes a choice, players can't cast spells or activate abilities until after the cards are drawn or put into the graveyard and damage has been dealt (if applicable)."
+                }
+            ],
+            "printings": [
+                "C21",
+                "KLD",
+                "KLR",
+                "MPS",
+                "PKLD",
+                "PLST",
+                "SCD"
+            ],
+            "legalities": [
+                {
+                    "format": "Brawl",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Commander",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Duel",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Explorer",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Gladiator",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Historic",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Legacy",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Modern",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Oathbreaker",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Penny",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Pioneer",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Timeless",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Vintage",
+                    "legality": "Legal"
+                }
+            ],
+            "id": "32e0ee33-c94b-5987-b064-524a65c1c49b"
+        },
+        {
+            "name": "Combustible Gearhulk",
+            "manaCost": "{4}{R}{R}",
+            "cmc": 6,
+            "colors": [
+                "R"
+            ],
+            "colorIdentity": [
+                "R"
+            ],
+            "type": "Artifact Creature — Construct",
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "subtypes": [
+                "Construct"
+            ],
+            "rarity": "Mythic",
+            "set": "PKLD",
+            "setName": "Kaladesh Promos",
+            "text": "First strike\nWhen Combustible Gearhulk enters the battlefield, target opponent may have you draw three cards. If the player doesn't, you mill three cards, then Combustible Gearhulk deals damage to that player equal to the total mana value of those cards.",
+            "artist": "Daarken",
+            "number": "112s",
+            "power": "6",
+            "toughness": "6",
+            "layout": "normal",
+            "variations": [
+                "32e0ee33-c94b-5987-b064-524a65c1c49b"
+            ],
+            "rulings": [
+                {
+                    "date": "2016-09-20",
+                    "text": "If any of the cards put into your graveyard have {X} in their mana cost, X is considered to be 0."
+                },
+                {
+                    "date": "2016-09-20",
+                    "text": "If you have fewer than three cards in your library, the opponent may choose to have you draw three cards. If so, you'll lose the game as state-based actions are performed."
+                },
+                {
+                    "date": "2016-09-20",
+                    "text": "While Combustible Gearhulk's triggered ability is resolving, no player may take any actions other than those specified by the Gearhulk. Once the opponent makes a choice, players can't cast spells or activate abilities until after the cards are drawn or put into the graveyard and damage has been dealt (if applicable)."
+                }
+            ],
+            "printings": [
+                "C21",
+                "KLD",
+                "KLR",
+                "MPS",
+                "PKLD",
+                "PLST",
+                "SCD"
+            ],
+            "legalities": [
+                {
+                    "format": "Brawl",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Commander",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Duel",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Explorer",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Gladiator",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Historic",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Legacy",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Modern",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Oathbreaker",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Penny",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Pioneer",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Timeless",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Vintage",
+                    "legality": "Legal"
+                }
+            ],
+            "id": "6531b101-9242-51ae-b212-5cddb15377ad"
+        },
+        {
+            "name": "Combustible Gearhulk",
+            "manaCost": "{4}{R}{R}",
+            "cmc": 6,
+            "colors": [
+                "R"
+            ],
+            "colorIdentity": [
+                "R"
+            ],
+            "type": "Artifact Creature — Construct",
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "subtypes": [
+                "Construct"
+            ],
+            "rarity": "Mythic",
+            "set": "PLIST",
+            "setName": "The List",
+            "text": "First strike\nWhen Combustible Gearhulk enters the battlefield, target opponent may have you draw three cards. If the player doesn't, you mill three cards, then Combustible Gearhulk deals damage to that player equal to the total mana value of those cards.",
+            "artist": "Daarken",
+            "number": "320",
+            "power": "6",
+            "toughness": "6",
+            "layout": "normal",
+            "rulings": [
+                {
+                    "date": "2016-09-20",
+                    "text": "If any of the cards put into your graveyard have {X} in their mana cost, X is considered to be 0."
+                },
+                {
+                    "date": "2016-09-20",
+                    "text": "If you have fewer than three cards in your library, the opponent may choose to have you draw three cards. If so, you'll lose the game as state-based actions are performed."
+                },
+                {
+                    "date": "2016-09-20",
+                    "text": "While Combustible Gearhulk's triggered ability is resolving, no player may take any actions other than those specified by the Gearhulk. Once the opponent makes a choice, players can't cast spells or activate abilities until after the cards are drawn or put into the graveyard and damage has been dealt (if applicable)."
+                }
+            ],
+            "printings": [
+                "C21",
+                "KLD",
+                "KLR",
+                "MPS",
+                "PKLD",
+                "PLIST",
+                "SCD"
+            ],
+            "legalities": [
+                {
+                    "format": "Commander",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Duel",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Explorer",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Gladiator",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Historic",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Historicbrawl",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Legacy",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Modern",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Oathbreaker",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Pioneer",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Vintage",
+                    "legality": "Legal"
+                }
+            ],
+            "id": "7383ceeb-302b-5ec6-b52c-ef9dedfcfce3"
+        },
+        {
+            "name": "Combustible Gearhulk",
+            "manaCost": "{4}{R}{R}",
+            "cmc": 6,
+            "colors": [
+                "R"
+            ],
+            "colorIdentity": [
+                "R"
+            ],
+            "type": "Artifact Creature — Construct",
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "subtypes": [
+                "Construct"
+            ],
+            "rarity": "Mythic",
+            "set": "PLST",
+            "setName": "The List",
+            "text": "First strike\nWhen Combustible Gearhulk enters the battlefield, target opponent may have you draw three cards. If the player doesn't, you mill three cards, then Combustible Gearhulk deals damage to that player equal to the total mana value of those cards.",
+            "artist": "Daarken",
+            "number": "KLD-112",
+            "power": "6",
+            "toughness": "6",
+            "layout": "normal",
+            "rulings": [
+                {
+                    "date": "2016-09-20",
+                    "text": "If any of the cards put into your graveyard have {X} in their mana cost, X is considered to be 0."
+                },
+                {
+                    "date": "2016-09-20",
+                    "text": "If you have fewer than three cards in your library, the opponent may choose to have you draw three cards. If so, you'll lose the game as state-based actions are performed."
+                },
+                {
+                    "date": "2016-09-20",
+                    "text": "While Combustible Gearhulk's triggered ability is resolving, no player may take any actions other than those specified by the Gearhulk. Once the opponent makes a choice, players can't cast spells or activate abilities until after the cards are drawn or put into the graveyard and damage has been dealt (if applicable)."
+                }
+            ],
+            "printings": [
+                "C21",
+                "KLD",
+                "KLR",
+                "MPS",
+                "PKLD",
+                "PLST",
+                "SCD"
+            ],
+            "legalities": [
+                {
+                    "format": "Brawl",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Commander",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Duel",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Explorer",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Gladiator",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Historic",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Legacy",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Modern",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Oathbreaker",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Penny",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Pioneer",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Timeless",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Vintage",
+                    "legality": "Legal"
+                }
+            ],
+            "id": "b4635651-8218-59d0-b5b3-175323072dbc"
+        },
+        {
+            "name": "Combustible Gearhulk",
+            "manaCost": "{4}{R}{R}",
+            "cmc": 6,
+            "colors": [
+                "R"
+            ],
+            "colorIdentity": [
+                "R"
+            ],
+            "type": "Artifact Creature — Construct",
+            "types": [
+                "Artifact",
+                "Creature"
+            ],
+            "subtypes": [
+                "Construct"
+            ],
+            "rarity": "Mythic",
+            "set": "SCD",
+            "setName": "Starter Commander Decks",
+            "text": "First strike\nWhen Combustible Gearhulk enters the battlefield, target opponent may have you draw three cards. If the player doesn't, you mill three cards, then Combustible Gearhulk deals damage to that player equal to the total mana value of those cards.",
+            "artist": "Daarken",
+            "number": "128",
+            "power": "6",
+            "toughness": "6",
+            "layout": "normal",
+            "rulings": [
+                {
+                    "date": "2016-09-20",
+                    "text": "If any of the cards put into your graveyard have {X} in their mana cost, X is considered to be 0."
+                },
+                {
+                    "date": "2016-09-20",
+                    "text": "If you have fewer than three cards in your library, the opponent may choose to have you draw three cards. If so, you'll lose the game as state-based actions are performed."
+                },
+                {
+                    "date": "2016-09-20",
+                    "text": "While Combustible Gearhulk's triggered ability is resolving, no player may take any actions other than those specified by the Gearhulk. Once the opponent makes a choice, players can't cast spells or activate abilities until after the cards are drawn or put into the graveyard and damage has been dealt (if applicable)."
+                }
+            ],
+            "printings": [
+                "C21",
+                "KLD",
+                "KLR",
+                "MPS",
+                "PKLD",
+                "PLST",
+                "SCD"
+            ],
+            "legalities": [
+                {
+                    "format": "Brawl",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Commander",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Duel",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Explorer",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Gladiator",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Historic",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Legacy",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Modern",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Oathbreaker",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Penny",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Pioneer",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Timeless",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Vintage",
+                    "legality": "Legal"
+                }
+            ],
+            "id": "40917030-e9f1-5481-9bae-0852d4969de0"
+        }
+    ]
+}

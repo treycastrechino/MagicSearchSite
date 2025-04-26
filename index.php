@@ -9,6 +9,8 @@ use mtgsdk\Subtype;
 use mtgsdk\Supertype;
 use mtgsdk\Type;
 
+include("cardSearchFunctions.php");
+
 ?>
 
 <!DOCTYPE html>
@@ -23,7 +25,16 @@ use mtgsdk\Type;
     <body>
         <?php include("siteHeader.php")?>
 
-        <p>This is the wishlist display page</p>
+        <?php 
+
+        $searchConditions = addInitialSearchCondition('toughness','13');
+        $searchConditions = addAdditionalSearchConditions($searchConditions,'colors','b');
+        $testCards = returnCardJson($searchConditions);
+        showCardImage($testCards,0);
+
+        ?>
+
+        <p>This is the home page</p>
 
         <?php include("siteFooter.php")?>
     </body>
