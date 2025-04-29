@@ -1,9 +1,17 @@
 <?php
-    //This page will be used to log in.
-    //Should somebody already be logged in it should redirect them to the home page with a "already logged in" message
+
+    include("siteHeader.php");
+    include("register_login_logic.php");
 
 
+    $errorMessages = array(
 
+        "loginError" => $_SESSION['loginError'] ?? '',
+        "registerError" => $_SESSION['registerError'] ??''
+    );
+
+    session_unset();
+    
 ?>
 
 <!DOCTYPE html>
@@ -17,40 +25,40 @@
 
 
 <body> 
+    <script src="switchLoginRegister.js"> </script>
 
-
-    
     <div class ="container">
-        <?php include("siteHeader.php") ?>
-        <div class="form-box active" id="login-form">
-            <form action="">
+        
+        <div class="form-box <?= isActiveForm('login-form',$activeForm)?>" id="login-form">
+            <form action="Login.php" method="post">
                 <h2>Login</h2>
+                <?=showError($errorMessages['loginError']); ?>
                 <input type="email" name="email" placeholder="Email" required>
                 <input type="password" name="password" placeholder="Password" required>
-                <button type="submit" name="login">Login</button>
+                <button type="submit" name="login" value="login">Login</button>
                 <p>Don't have an account?  <a href="#" onclick="swapForms('register-form')">Register</a></p> 
             </form>
         </div>
 
-        <div class="form-box" id="register-form">
-            <form action="">
-
+        <div class="form-box <?= isActiveForm('register-form',$activeForm)?>" id="register-form">
+            <form action="Login.php" method="post">
                 <h2>Register</h2>
+                <?=showError($errorMessages['registerError']); ?>
                 <input type="text" name="username" placeholder="Username" required>
                 <input type="email" name="email" placeholder="Email" required>
                 <input type="password" name="password" placeholder="Password" required>
-                <button type="submit" name="register">Register</button>
+                <button type="submit" name="register" value="register">Register</button>
                 <p>Already have an account?  <a href="#" onclick="swapForms('login-form')">Login</a></p> 
             </form>
         </div>
-        <?php include("siteFooter.php")?>
-    </div>
 
-    <script src="switchLoginRegister.js"> </script>
+    </div>
 
 </body>
 
-    
-
 </html>
+<?php 
 
+include("siteFooter.php");
+
+?>
