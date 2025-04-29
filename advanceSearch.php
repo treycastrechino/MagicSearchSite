@@ -1,4 +1,7 @@
+<?php 
+include("siteHeader.php");
 
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -9,11 +12,16 @@
     </head>
 
     <body>
-        <?php include("siteHeader.php")?>
 
         <p>This is the advanced search page</p>
 
-        <?php include("siteFooter.php")?>
+        
     </body>
     
 </html>
+
+<?php 
+
+include("siteFooter.php")
+
+?>

@@ -1,15 +1,8 @@
 <?php
-// This will be the main home page of the site.
 
-require 'vendor/autoload.php';
-use mtgsdk\Card;
-use mtgsdk\QueryBuilder;
-use mtgsdk\Set;
-use mtgsdk\Subtype;
-use mtgsdk\Supertype;
-use mtgsdk\Type;
-
+include("siteHeader.php");
 include("cardSearchFunctions.php");
+
 
 ?>
 
@@ -23,10 +16,10 @@ include("cardSearchFunctions.php");
     </head>
 
     <body>
-        <?php include("siteHeader.php")?>
+       
 
         <?php 
-
+        
         $searchConditions = addInitialSearchCondition('set','MIR');
         $searchConditions = addAdditionalSearchConditions($searchConditions,'colors',"b,u");
         $testCards = returnCardJson($searchConditions);
@@ -36,7 +29,13 @@ include("cardSearchFunctions.php");
 
         <p>This is the home page</p>
 
-        <?php include("siteFooter.php")?>
+        
     </body>
     
 </html>
+
+
+<?php
+
+ include("siteFooter.php");
+?>
