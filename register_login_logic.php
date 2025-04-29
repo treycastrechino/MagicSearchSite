@@ -104,7 +104,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         }
         else{
 
-            echo "the username is free";
         }
 
         if($checkEmail->num_rows > 0){
@@ -115,13 +114,20 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         }
         else{
 
-            echo "the email is free";
         }
 
         $insertUserQuery = "INSERT INTO user (username, password, email)
                             VALUES   ('$name', '$passwordHash', '$email')";
         $connectionVariable->query($insertUserQuery);
+
+        $_SESSION['username'] = $name;
+        $_SESSION['email'] = $email;
+        $_SESSION['isLoggedIn'] = true;
+
         closeConnection($connectionVariable);
+
+        header("Location: index.php");
+        exit();
     }
     
     if(isset($_POST['login'])){
