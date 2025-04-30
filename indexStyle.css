@@ -1,0 +1,129 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*{
+
+    /* this piece of junk won't apply the font family to anything so I can't use it for some reason. */
+    margin: 0;
+}
+
+
+h1 {
+    font-family: 'exo',sans-serif;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+label{
+    font-family: 'exo',sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+option{
+    font-family: 'exo',sans-serif;
+    font-size: 16px;
+}
+
+.dropDownLabel{
+    font-family: 'exo',sans-serif;
+    font-size: 24;
+}
+
+select{
+    font-family: 'exo',sans-serif;
+    margin-bottom: 30px;
+    font-size: 24;
+    border-radius: 6px;
+}
+
+.colorCheckbox{
+    margin-bottom: 20px;
+}
+
+input {
+    padding: 12px;
+    background-color: #eee;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #333;
+    
+}
+
+.cardName{
+    width: 50%;
+    
+}
+
+
+.randomCardSearch {
+    display: block;
+    text-align: center;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+form{
+    width: 50%;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.cardSearch {
+    font-size: 34px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.searchCardButton{
+    font-family: 'exo',sans-serif;
+    padding: 12px;
+    background: #3b3f49;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer; /* changes to pointer to help user know the button does something*/
+    font-size: 16px;
+    color: #fff;
+    font-weight: 500; /* adds a little bold effect to make the button stand out*/
+    margin-bottom: 20px;
+    transition: 0.5s; /*transition effect when hovered over*/
+}
+
+.randomImageDiv{
+    display: block;
+    text-align: center;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+img{
+    padding: 12px;
+}
+
+button {
+    font-family: 'exo',sans-serif;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    background: #7494ec;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer; /* changes to pointer to help user know the button does something*/
+    font-size: 16px;
+    color: #fff;
+    font-weight: 500; /* adds a little bold effect to make the button stand out*/
+    margin-bottom: 20px;
+    transition: 0.5s; /*transition effect when hovered over*/
+}
+
+button:hover {
+    background: #6884d3;
+}

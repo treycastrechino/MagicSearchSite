@@ -1,16 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
 
+
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap');
 * {
 
     margin:     0;
     padding:    0;
     box-sizing: border-box;
-    font-family: "Poppins", serif;
+    font-family: 'exo',sans-serif;
 
 }
 
 
 body {
+    font-family: 'exo',sans-serif;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
@@ -37,12 +39,14 @@ body {
 }
 
 h2 {
+    font-family: 'exo',sans-serif;
     font-size: 34px;
     text-align: center;
     margin-bottom: 20px; /* padding to make sure the elements don't touch*/
 }
 
 input {
+    font-family: 'exo',sans-serif;
     width: 100%;
     padding: 12px;
     background-color: #eee;
@@ -55,6 +59,7 @@ input {
 }
 
 button {
+    font-family: 'exo',sans-serif;
     width: 100%;
     padding: 12px;
     background: #7494ec;
@@ -74,12 +79,14 @@ button:hover {
 }
 
 p {
+    font-family: 'exo',sans-serif;
     font-size: 14.5px;
     text-align: center;
     margin-bottom: 10px;
 }
 
 p a {
+    font-family: 'exo',sans-serif;
     color: #7494ec;
     text-decoration: none; /* removes the underline from the text*/
 }
@@ -89,7 +96,7 @@ p a:hover{
 }
 
 .error-message{
-
+    font-family: 'exo',sans-serif;
     padding: 12px;
     background: #f8d7da;
     border-radius: 6px;

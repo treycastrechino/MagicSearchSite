@@ -27,6 +27,10 @@ Example:name=nissa, worldwaker|jace|ajani, caller More examples: colors=red,whit
     "colors" - The card colors. Usually this is derived from the casting cost, but some cards are special (like the back
      of dual sided cards and Ghostfire). The colors are R(red),W(white),B(black),G(green),U(blue)
 
+        Note: This API does not include the "colorless" symbol that was introduced into the game and can not be searched by colorless
+        It also can not be reversed to assume that each card without a "color" array is colorless. The lack just means the data was not pertinent
+        to the card not that it was colorless.
+
     "colorIdentity" - The card’s color identity, by color code. [“Red”, “Blue”] becomes [“R”, “U”]. A card’s color identity
      includes colors from the card’s rules text.
 
@@ -85,7 +89,7 @@ Example:name=nissa, worldwaker|jace|ajani, caller More examples: colors=red,whit
 
     "contains" - Filter cards based on whether or not they have a specific field available (like imageUrl)
 
-    "id" - A unique id for this card. It is made up by doing an SHA1 hash of setCode + cardName + cardImageName
+    "ID" - A unique id for this card. It is made up by doing an SHA1 hash of setCode + cardName + cardImageName
 
     "multiverseid" - The multiverseid of the card on Wizard’s Gatherer web page. Cards from sets that do not exist on Gatherer will NOT have 
     a multiverseid. Sets not on Gatherer are: ATH, ITP, DKM, RQS, DPA and all sets with a 4 letter code that starts with a lowercase ‘p’.
@@ -96,6 +100,13 @@ Example:name=nissa, worldwaker|jace|ajani, caller More examples: colors=red,whit
         At the time of creation the API card collection only goes up to the set Outlaws of Thunder Junction
 
         It is also missing images for certain promo or alternate art cards.
+
+    Random search code just for reference:
+
+        $searchConditions = addInitialSearchCondition('set','MIR');
+        $searchConditions = addAdditionalSearchConditions($searchConditions,'colors',"b,u");
+        $testCards = returnCardJson($searchConditions);
+        showAllCardsFromSearch($testCards);
 
 */
 
@@ -140,7 +151,6 @@ function showCardImage($cardJsonObject, $cardIndex){
 function showAllCardsFromSearch($cardJson){
 
     $numOfCards = count($cardJson['cards']);
-    echo $numOfCards;
     echo '<br>';
     for($i = 0; $i < $numOfCards; $i++){
 
@@ -157,6 +167,42 @@ function showAllCardsFromSearch($cardJson){
         }
     }
 
+}
+
+// this function is nice for a proof of concept but there are data limits on the API (5000 requests/hr).
+// The newest card set (tarkir dragonstorm) ends around 700,000 (multiverseid) but there are gaps and this function may run 15 times before returning a valid result.
+function returnRandomCardUrl(){
+
+    $cardJson = null;
+    while($cardJson == null){
+
+    $randomCardID = rand(0,700000);
+    $searchCondition = addInitialSearchCondition('multiverseid', $randomCardID);
+    $cardJson = returnCardJson($searchCondition);
+
+
+    // see if the random search returned a card
+    if(count($cardJson['cards']) != 0){
+
+        // check to see if it has an image
+        if(array_key_exists('imageUrl',$cardJson['cards'][0])){
+
+            //let the loop exit
+        }
+        else{
+
+            $cardJson = null;
+        }
+    }
+    else{
+
+        $cardJson = null;
+    }
+
+    }
+
+    $myImageUrl = $cardJson['cards'][0]['imageUrl'];
+    return $myImageUrl;
 }
 
 ?>
