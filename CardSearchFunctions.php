@@ -116,26 +116,20 @@ const ENDPOINT = "https://api.magicthegathering.io/v1/cards?";
 
 /* Will return one or more cards stored in a Json object */
 
-function returnCardJson($pSearchConditions){
+function returnCardJson($pSearchConditions,$pageNumber){
 
-    $searchQuery = ENDPOINT . $pSearchConditions;
+    $pageSearch = 'page='. $pageNumber . '&pageSize=20';
+    $searchQuery = ENDPOINT . $pageSearch . $pSearchConditions;
     $response = json_decode(file_get_contents("$searchQuery"), true);
 
     return $response;
 
 }
 
-function addInitialSearchCondition($condition, $text){
 
-    $SearchCondition = $condition . '='. $text;
+function addSearchCondition($SearchConditions,$newCondition, $conditionText){
 
-    return $SearchCondition;
-
-}
-
-function addAdditionalSearchConditions($SearchConditions,$condition, $text){
-
-    $SearchConditions = $SearchConditions . '&' . $condition . '='. $text;
+    $SearchConditions = $SearchConditions . '&' . $newCondition . '='. $conditionText;
 
     return $SearchConditions;
 
@@ -192,8 +186,8 @@ function returnRandomCardUrl(){
     while($cardJson == null){
 
     $randomCardID = rand(0,700000);
-    $searchCondition = addInitialSearchCondition('multiverseid', $randomCardID);
-    $cardJson = returnCardJson($searchCondition);
+    $searchCondition = addSearchCondition('','multiverseid', $randomCardID);
+    $cardJson = returnCardJson($searchCondition,1);
 
 
     // see if the random search returned a card

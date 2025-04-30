@@ -14,7 +14,7 @@ initalizeSearchConditionCardType();
 
 
 $searchConditions = buildSearchConditions();
-$cardJsonResults = returnCardJson($searchConditions);
+$cardJsonResults = returnCardJson($searchConditions,1);
 $imageUrlArray = returnImageUrlArrayFromSearch($cardJsonResults);
 
 session_unset();

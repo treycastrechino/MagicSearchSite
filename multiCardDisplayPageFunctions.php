@@ -127,11 +127,11 @@ function buildSearchConditions(){
     // the dropdown menu will always have something selected so this makes the condition build process easier because it is always more than one
 
     $searchConditions = '';
-    $searchConditions = addInitialSearchCondition('gameFormat', $_SESSION['cardSearchFormat']);
-    $searchConditions = addAdditionalSearchConditions($searchConditions, 'types', $_SESSION['cardSearchCardType']);
+    $searchConditions = addSearchCondition($searchConditions, 'gameFormat', $_SESSION['cardSearchFormat']);
+    $searchConditions = addSearchCondition($searchConditions, 'types', $_SESSION['cardSearchCardType']);
     if($_SESSION['cardSearchName'] != ''){
 
-        $searchConditions = addAdditionalSearchConditions($searchConditions, 'name', $_SESSION['cardSearchName']);
+        $searchConditions = addSearchCondition($searchConditions, 'name', $_SESSION['cardSearchName']);
     }
     
     $colorSearch = createColorSearchCondition();
