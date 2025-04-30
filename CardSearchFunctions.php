@@ -169,6 +169,21 @@ function showAllCardsFromSearch($cardJson){
 
 }
 
+function returnImageUrlArrayFromSearch($cardJson){
+
+    $urlArray = array();
+    $numOfCards = count($cardJson['cards']);
+    for($i = 0; $i < $numOfCards; $i++){
+
+        if(array_key_exists('imageUrl',$cardJson['cards'][$i])){
+
+            array_push($urlArray,$cardJson['cards']["$i"]['imageUrl']);
+        }
+    }
+    return $urlArray;
+
+}
+
 // this function is nice for a proof of concept but there are data limits on the API (5000 requests/hr).
 // The newest card set (tarkir dragonstorm) ends around 700,000 (multiverseid) but there are gaps and this function may run 15 times before returning a valid result.
 function returnRandomCardUrl(){

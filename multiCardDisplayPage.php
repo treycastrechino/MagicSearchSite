@@ -15,9 +15,11 @@ initalizeSearchConditionCardType();
 
 $searchConditions = buildSearchConditions();
 $cardJsonResults = returnCardJson($searchConditions);
-showAllCardsFromSearch($cardJsonResults);
+$imageUrlArray = returnImageUrlArrayFromSearch($cardJsonResults);
 
 session_unset();
+
+
 ?>
 
 
@@ -29,7 +31,17 @@ session_unset();
     <title>Document</title>
 </head>
 <body>
+    <div>
+    <?php 
     
+    createImageArray($imageUrlArray);
+    if(count($imageUrlArray) < 1){
+
+        echo '<p> No results found </p>';
+    }
+    
+    ?>
+    </div>
 </body>
 </html>
 

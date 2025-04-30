@@ -140,5 +140,18 @@ function buildSearchConditions(){
     return $searchConditions;
 }
 
+function createImageArray($urlArray){
+
+    $urlCount = count($urlArray);
+    for ($i = 0; $i < $urlCount; $i ++){
+
+        // statement for eventual on click function
+        // $htmlStatement = '<img src="' . $urlArray[$i] . '" onclick="window.open(this.src)">';
+        $htmlStatement = '<img src="' . $urlArray[$i] . '">';
+        echo $htmlStatement;
+        echo '<br>';
+    }
+    
+}
 
 ?>
