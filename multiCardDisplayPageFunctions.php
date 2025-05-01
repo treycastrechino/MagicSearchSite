@@ -48,6 +48,29 @@ function initalizeSearchConditionCardType(){
         $_SESSION['cardSearchCardType'] = '';
     }
 }
+function initalizeCurrentPage(){
+
+    if(isset($_SESSION['currentPage'])){
+
+
+    }
+    else{
+
+        $_SESSION['currentPage'] = 1;
+    }
+}
+
+function initalizeTotalPages(){
+
+    if(isset($_SESSION['totalPageCount'])){
+
+
+    }
+    else{
+
+        $_SESSION['totalPageCount'] = 1;
+    }
+}
 
 
 function createColorSearchCondition(){
@@ -140,17 +163,95 @@ function buildSearchConditions(){
     return $searchConditions;
 }
 
-function createImageArray($urlArray){
+function createImageArray($cardJson){
 
-    $urlCount = count($urlArray);
-    for ($i = 0; $i < $urlCount; $i ++){
+    $numOfCards = count($cardJson['cards']);
+    for($i = 0; $i < $numOfCards; $i++){
 
-        // statement for eventual on click function
-        // $htmlStatement = '<img src="' . $urlArray[$i] . '" onclick="window.open(this.src)">';
-        $htmlStatement = '<img src="' . $urlArray[$i] . '">';
-        echo $htmlStatement;
-        echo '<br>';
+        if(array_key_exists('imageUrl',$cardJson['cards'][$i])){
+
+            $imageUrl = $cardJson['cards'][$i]['imageUrl'];
+
+            $htmlImageStatement =  '
+            <div class="imageDiv" id="imageDiv">
+
+                <img src="'. $imageUrl .'" style="width:250px;height:350px;"> 
+
+            </div>
+            ';
+            
+            echo $htmlImageStatement;
+        }
+        else{
+
+            $htmlStatement = '<p> No image found for' . $cardJson['cards'][$i]['name']. ' from ' . $cardJson['cards'][$i]['setName'] . '</p>';
+            
+            echo $htmlStatement;
+            echo '<br>';
+            $htmlImageStatement =  '
+            <div class="imageDiv" id="imageDiv">
+
+                <img src="Images/PepeHands.png" style="width:250px;height:350px;"> 
+
+            </div>
+            ';
+            echo $htmlImageStatement;
+        }
     }
+    
+}
+
+function createPageNumberLinks($currentPage, $numOfPages){
+
+echo '<div class="changePageLinks" id="changePageLinks">';
+    if($currentPage != 1){
+        echo '
+        
+            <form action="multiCardDisplayPage.php" method="post">
+                <input type="hidden" name="previousPage" value="previousPage"/>
+                <a href="#" onclick="this.parentNode.submit()">&lt;</a>
+            </form>';
+
+            echo '
+        
+            <form action="multiCardDisplayPage.php" method="post">
+                <input type="hidden" name="firstPage" value="firstPage"/>
+                <a href="#" onclick="this.parentNode.submit()">1...</a>
+            </form>';
+
+
+    }
+    
+
+    for($i = 1; $i < $numOfPages; $i ++){
+
+        if($i != 1 && $i != $numOfPages){
+            echo '<a href="multiCardDisplayPage.php">'. $currentPage .'</a>';
+        break;
+        }
+
+    }
+
+    if($currentPage != $numOfPages){
+
+
+        echo '
+        
+        <form action="multiCardDisplayPage.php" method="post">
+            <input type="hidden" name="lastPage" value="lastPage"/>
+            <a href="#" onclick="this.parentNode.submit()">...'. $numOfPages . '</a>
+        </form>';
+
+        echo '
+        
+        <form action="multiCardDisplayPage.php" method="post">
+            <input type="hidden" name="nextPage" value="nextPage"/>
+            <a href="#" onclick="this.parentNode.submit()">&gt;</a>
+        </form>';
+        
+    }
+
+    echo '</div>';
     
 }
 

@@ -1,7 +1,7 @@
 <?php
 
 include("siteHeader.php");
-include("multiCardDisplayPageFunctions.php");
+include("multiCardDisplayPageLogic.php");
 
 initalizeSearchConditionName();
 initializeSearchConditionColor('u');
@@ -11,13 +11,19 @@ initializeSearchConditionColor('b');
 initializeSearchConditionColor('w');
 initalizeSearchConditionFormat();
 initalizeSearchConditionCardType();
+initalizeCurrentPage();
+initalizeTotalPages();
 
-
+$cardsPerPage = 20;
 $searchConditions = buildSearchConditions();
-$cardJsonResults = returnCardJson($searchConditions,1);
-$imageUrlArray = returnImageUrlArrayFromSearch($cardJsonResults);
+$totalCardCount = getTotalCardCountFromSearchConditions($searchConditions);
+$totalPageCount = determinePageCountFromTotalCardCount($totalCardCount,$cardsPerPage);
+$_SESSION['totalPageCount'] = $totalPageCount;
+$currentPage = $_SESSION['currentPage'];
+createPageNumberLinks($currentPage, $totalPageCount);
+echo '<br>';
+$cardJsonResults = returnCardJson($searchConditions,$currentPage);
 
-session_unset();
 
 
 ?>
@@ -29,16 +35,13 @@ session_unset();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="multiCardDisplayPage.css">
 </head>
 <body>
     <div>
     <?php 
     
-    createImageArray($imageUrlArray);
-    if(count($imageUrlArray) < 1){
-
-        echo '<p> No results found </p>';
-    }
+    createImageArray($cardJsonResults);
     
     ?>
     </div>
@@ -46,12 +49,10 @@ session_unset();
 </html>
 
 
-
-
 <?php
 
 
-
+createPageNumberLinks($currentPage, $totalPageCount);
 include("siteFooter.php");
 
 ?>

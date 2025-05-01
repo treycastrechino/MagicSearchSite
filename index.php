@@ -14,6 +14,7 @@ $randCardUrl = $_SESSION['randCardUrl'];
 session_unset();
 
 
+
 ?>
 
 <!DOCTYPE html>
