@@ -35,7 +35,7 @@ $cardJsonResults = returnCardJson($searchConditions,$currentPage);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="multiCardDisplayPage.css">
+    <link rel="stylesheet" href="http://localhost/MagicSearchSite/multiCardDisplayPage.css">
 </head>
 <body>
     <div>

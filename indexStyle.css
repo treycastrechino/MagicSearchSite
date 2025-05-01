@@ -11,6 +11,11 @@ body {
     
 }
 
+div{
+
+    text-align: center;
+}
+
 h1 {
     color: #c6cad1;
     font-family: 'exo',sans-serif;

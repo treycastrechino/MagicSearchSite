@@ -11,6 +11,16 @@ body {
     
 }
 
+.messageBox{
+
+    text-align: center;
+}
+
+input {
+
+    margin-bottom: 10px;
+}
+
 h1 {
     color: #c6cad1;
     font-family: 'exo',sans-serif;
@@ -66,6 +76,7 @@ input {
 p {
 
     color: rgb(224, 222, 218);
+    font-size: 18px;
 }
 
 

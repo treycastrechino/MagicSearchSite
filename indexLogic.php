@@ -12,7 +12,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         $_SESSION['showRandCard'] = true;
 
         // go back to the home page but refresh the post variable so it doesn't act weird and ask for data resubmission
-        header("Location: index.php");
+        header("Location: http://localhost/MagicSearchSite/index.php");
         exit();
     }
 
@@ -33,7 +33,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         }
         else{
 
-            echo "the array was empty";
+            
         }
 
         $_SESSION['cardSearchFormat'] = $_POST['gameFormat'];
@@ -45,7 +45,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         $_SESSION['cardSearchName'] = $_POST['cardName'];
         echo 'card name is ' . $_SESSION['cardSearchName'];
 
-        header("Location: multiCardDisplayPage.php");
+        header("Location: http://localhost/MagicSearchSite/multiCardDisplayPage.php");
         exit();
     }
 

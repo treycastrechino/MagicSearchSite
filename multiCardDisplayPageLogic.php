@@ -12,7 +12,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
         $_SESSION['currentPage'] = $_SESSION['currentPage'] - 1;
 
-        header("Location: multiCardDisplayPage.php");
+        header("Location: http://localhost/MagicSearchSite/multiCardDisplayPage.php");
         exit();
     }
 
@@ -21,7 +21,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
         $_SESSION['currentPage'] = $_SESSION['currentPage'] + 1;
 
-        header("Location: multiCardDisplayPage.php");
+        header("Location: http://localhost/MagicSearchSite/multiCardDisplayPage.php");
         exit();
     }
 
@@ -30,7 +30,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
         $_SESSION['currentPage'] = $_SESSION['totalPageCount'];
 
-        header("Location: multiCardDisplayPage.php");
+        header("Location: http://localhost/MagicSearchSite/multiCardDisplayPage.php");
         exit();
     }
     if(isset($_POST['firstPage'])){
@@ -38,7 +38,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
         $_SESSION['currentPage'] = 1;
 
-        header("Location: multiCardDisplayPage.php");
+        header("Location: http://localhost/MagicSearchSite/multiCardDisplayPage.php");
         exit();
     }
 }

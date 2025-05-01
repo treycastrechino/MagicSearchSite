@@ -18,6 +18,11 @@ session_unset();
 $_SESSION['username'] = $username;
 $_SESSION['isLoggedIn'] = $isLoggedIn;
 
+$searchConditions = '';
+$testCards = returnCardJson($searchConditions,1);
+echo '<div>';
+showCardImage($testCards,0);
+echo '</div>';
 
 ?>
 
@@ -27,10 +32,20 @@ $_SESSION['isLoggedIn'] = $isLoggedIn;
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
-        <link rel="stylesheet" href="indexStyle.css">
+        <link rel="stylesheet" href="http://localhost/MagicSearchSite/indexStyle.css">
+        <script src="http://localhost/MagicSearchSite/siteJavaScript.js"></script>
+        
+
     </head>
 
     <body>
+
+    <div class="shitButton" id="shitButton">
+
+            <button id="MyId" type="submit" name="randomCard" value="randomCard" onclick="onClick(this.id)">Shit button</button>  
+             
+        </div>
+        
        <h1>
         You've arived at the mtg global search hub "Magic GSH"! <br>
         Start by searching for any card by name or even grabbing a random card from all of magic <br>

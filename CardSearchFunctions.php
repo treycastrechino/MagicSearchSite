@@ -153,8 +153,12 @@ function addSearchCondition($SearchConditions,$newCondition, $conditionText){
 function showCardImage($cardJsonObject, $cardIndex){
 
     $myImageUrl = $cardJsonObject['cards']["$cardIndex"]['imageUrl'];
-        $urlString = '<img src="'. $myImageUrl. '"/>';
-        echo "$urlString";
+    $cardMultiverseID = $cardJsonObject['cards']["$cardIndex"]['multiverseid'];
+    $urlString = '<img id="'. $cardMultiverseID;
+    $urlString = $urlString . '" src="';
+    $urlString = $urlString . $myImageUrl;
+    $urlString = $urlString . '"onClick="onClick(this.id)" style="width:250px;height:350px;">';
+    echo $urlString;
 }
 
 function showAllCardsFromSearch($cardJson){
@@ -177,6 +181,7 @@ function showAllCardsFromSearch($cardJson){
     }
 
 }
+
 
 
 // this function is nice for a proof of concept but there are data limits on the API (5000 requests/hr).

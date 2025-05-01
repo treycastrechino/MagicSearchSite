@@ -226,7 +226,7 @@ echo '<div class="changePageLinks" id="changePageLinks">';
     for($i = 1; $i < $numOfPages; $i ++){
 
         if($i != 1 && $i != $numOfPages){
-            echo '<a href="multiCardDisplayPage.php">'. $currentPage .'</a>';
+            echo '<a href="http://localhost/MagicSearchSite/multiCardDisplayPage.php">'. $currentPage .'</a>';
         break;
         }
 

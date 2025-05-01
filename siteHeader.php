@@ -45,7 +45,7 @@
 
 ?>
 
-<link rel="stylesheet" href="headerStyle.css">
+<link rel="stylesheet" href="http://localhost/MagicSearchSite/headerStyle.css">
 
 
 
@@ -67,18 +67,18 @@
 
                 if($_SESSION['isLoggedIn']){
 
-                    echo '<a href="index.php">Home</a>';
-                    echo '<a href="advanceSearch.php">Advanced Search</a>';
-                    echo '<a href="decks.php">My Decks</a>';
-                    echo '<a href="wishlistDisplay.php">Wishlist</a>';
-                    echo '<a href="logout.php">Logout</a>';
+                    echo '<a href="http://localhost/MagicSearchSite/index.php">Home</a>';
+                    echo '<a href="http://localhost/MagicSearchSite/advanceSearch.php">Advanced Search</a>';
+                    echo '<a href="http://localhost/MagicSearchSite/decks.php">My Decks</a>';
+                    echo '<a href="http://localhost/MagicSearchSite/wishlistDisplay.php">Wishlist</a>';
+                    echo '<a href="http://localhost/MagicSearchSite/logout.php">Logout</a>';
                 }
                 
                 else{
 
-                    echo '<a href="index.php">Home</a>';
-                    echo '<a href="advanceSearch.php">Advanced Search</a>';
-                    echo '<a href="Login.php">Login</a>';
+                    echo '<a href="http://localhost/MagicSearchSite/index.php">Home</a>';
+                    echo '<a href="http://localhost/MagicSearchSite/advanceSearch.php">Advanced Search</a>';
+                    echo '<a href="http://localhost/MagicSearchSite/Login.php">Login</a>';
                 }
 
                 ?>  
