@@ -11,8 +11,12 @@ initializeRandCardUrl();
 $displayString = updateDisplayString($_SESSION['showRandCard']);
 $randCardUrl = $_SESSION['randCardUrl'];
 
+// username and logged in don't need to be removed with session unset
+$username = $_SESSION['username'];
+$isLoggedIn = $_SESSION['isLoggedIn'];
 session_unset();
-
+$_SESSION['username'] = $username;
+$_SESSION['isLoggedIn'] = $isLoggedIn;
 
 
 ?>

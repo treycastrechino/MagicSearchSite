@@ -2,36 +2,29 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap');
 
-* {
+.entirePage{
 
-    margin:     0;
-    padding:    0;
-    box-sizing: border-box;
+    background-image: url(Images/grayTexture.jpg);
+    background-size: contain;
+    background-repeat: repeat-y;
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 2%;
+    background-size: 100vw;
 
 }
-
-
 
 .header {
     font-family: 'exo',sans-serif;
-    width: 100vw;
     height: 10vh;
     justify-content: center;
     align-items: center;
-
 }
 
-body {
-    font-family: 'exo',sans-serif;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background: linear-gradient(to right, #e2e2e2, #c9d6ff);
-    color: #333;
-}
 
 h2 {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(224, 222, 218);
+    font-family: 'exo',sans-serif;
     font-size: 34px;
     text-align: center;
     margin-bottom: 20px;
@@ -40,11 +33,9 @@ h2 {
 p {
     font-family: 'exo',sans-serif;
     text-align: center;
-    
 }
 
 a {
     font-family: 'exo',sans-serif;
-    text-align: center;
     margin-right: 10px;
 }

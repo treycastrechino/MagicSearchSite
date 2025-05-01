@@ -171,7 +171,7 @@ function showAllCardsFromSearch($cardJson){
         else{
 
             echo "No image found for " . $cardJson['cards'][$i]['name']. ' from ' . $cardJson['cards'][$i]['setName'] . '<br>';
-            echo '<img src="Images/PepeHands.png"/>';
+            echo '<img src="Images/cardNotFound.jpg"/>';
             echo '<br>';
         }
     }

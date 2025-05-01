@@ -184,14 +184,14 @@ function createImageArray($cardJson){
         }
         else{
 
-            $htmlStatement = '<p> No image found for' . $cardJson['cards'][$i]['name']. ' from ' . $cardJson['cards'][$i]['setName'] . '</p>';
+            $htmlStatement = '<p> No image found for' . $cardJson['cards'][$i]['name']. ' from ' . $cardJson['cards'][$i]['setName'] . ' set</p>';
             
             echo $htmlStatement;
             echo '<br>';
             $htmlImageStatement =  '
             <div class="imageDiv" id="imageDiv">
 
-                <img src="Images/PepeHands.png" style="width:250px;height:350px;"> 
+                <img src="Images/cardNotFound.jpg" style="width:250px;height:350px;"> 
 
             </div>
             ';

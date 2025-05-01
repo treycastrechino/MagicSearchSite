@@ -1,23 +1,20 @@
 
 
 @import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap');
-* {
-
-    margin:     0;
-    padding:    0;
-    box-sizing: border-box;
-    font-family: 'exo',sans-serif;
-
-}
 
 
 body {
-    font-family: 'exo',sans-serif;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background: linear-gradient(to right, #e2e2e2, #c9d6ff);
-    color: #333;
+
+    background-image: url(Images/libraryArt.jpg);
+    background-repeat: repeat-y;
+    background-size: 100vw;
+    
+}
+
+.container{
+
+    margin-top: 15%;
+    margin-bottom: auto;
 }
 
 
@@ -27,7 +24,7 @@ body {
     width: 50%;
     max-width: 450px; /* set max just in case */
     padding: 30px; /* ensure content doesn't stick to the edges*/
-    background: #fff;
+    background: #585858;
     border-radius: 10px; /* gives rounded corners */
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     margin: 5px auto;
@@ -54,7 +51,6 @@ input {
     border: none;
     outline: none;
     font-size: 16px;
-    color: #333;
     margin-bottom: 20px;
 }
 
@@ -62,7 +58,7 @@ button {
     font-family: 'exo',sans-serif;
     width: 100%;
     padding: 12px;
-    background: #7494ec;
+    background: #3b3f49;
     border-radius: 6px;
     border: none;
     cursor: pointer; /* changes to pointer to help user know the button does something*/
@@ -75,7 +71,7 @@ button {
 
 /* sets hover color */
 button:hover {
-    background: #6884d3;
+    background: #a4a5a7;
 }
 
 p {
@@ -83,6 +79,7 @@ p {
     font-size: 14.5px;
     text-align: center;
     margin-bottom: 10px;
+    color: #fff;
 }
 
 p a {

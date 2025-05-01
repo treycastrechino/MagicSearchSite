@@ -1,6 +1,8 @@
 
 
 <?php  
+
+    echo '<div class ="entirePage">';
     include("databaseInterface.php");
     session_start();
 
@@ -10,7 +12,7 @@
 
     }
     else{
-    
+        
         $_SESSION['username'] = '';
 
     }
@@ -34,11 +36,11 @@
 
     }
 
-    function showWelcome(){
+    function showWelcome($username){
 
-        $welcomeMessage = 'Welcome ' . $_SESSION['username'] . '!';
+        $welcomeMessage ='<h2>' . 'Welcome back ' . $_SESSION['username'] . '!' . '</h2>';
 
-        return "<h2>$welcomeMessage</h2>";
+        echo $welcomeMessage;
     }
 
 ?>
@@ -46,11 +48,20 @@
 <link rel="stylesheet" href="headerStyle.css">
 
 
-<div class = "headerContainer">
-<script src="logout.js"> </script>
+
     <div class="header">
             <header>
-            <?=showWelcome(); ?>
+            <?php
+
+            if($_SESSION['username'] != ''){
+                
+                showWelcome($_SESSION['username']);
+            }
+            else{
+
+                echo '<h2>Welcome!</h2>';
+            }
+             ?>
                 <p>
                 <?php 
 
@@ -74,7 +85,3 @@
                 </p>
             </header>
         </div>
-        
-</div>
-
-    

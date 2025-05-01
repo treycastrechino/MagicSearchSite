@@ -1,23 +1,29 @@
+
+<?php
+
+include("siteHeader.php");
+
+?>
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Page</title>
-    <link rel="stylesheet" href="allPage.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="wishlistDisplay.css">
+    </head>
+
+    <body>
+        
+
+        <p>This is the contact us page</p>
 
 
-<body> 
-
-    <div class ="container">
-        <?php include("siteHeader.php") ?>
-
-        <p>This is the wishlist page</p>
-
-        <?php include("siteFooter.php")?>
-    </div>
-
-</body>
-
+    </body>
+    
 </html>
+
+<?php
+    include("siteFooter.php");
+
+?>
