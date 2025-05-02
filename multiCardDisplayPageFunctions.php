@@ -170,7 +170,10 @@ function createImageArray($cardJson){
 
         if(array_key_exists('imageUrl',$cardJson['cards'][$i])){
 
-            $imageUrl = $cardJson['cards'][$i]['imageUrl'];
+            showCardImage($cardJson,$i);
+            echo'<br>';
+
+            /* $imageUrl = $cardJson['cards'][$i]['imageUrl'];
 
             $htmlImageStatement =  '
             <div class="imageDiv" id="imageDiv">
@@ -180,7 +183,7 @@ function createImageArray($cardJson){
             </div>
             ';
             
-            echo $htmlImageStatement;
+            echo $htmlImageStatement; */
         }
         else{
 

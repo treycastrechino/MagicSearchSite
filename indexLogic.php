@@ -8,7 +8,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
     if(isset($_POST['randomCard'])){
 
-        $_SESSION['randCardUrl'] = returnRandomCardUrl();
+        $_SESSION['randCardJson'] = returnRandomCardJson();
         $_SESSION['showRandCard'] = true;
 
         // go back to the home page but refresh the post variable so it doesn't act weird and ask for data resubmission

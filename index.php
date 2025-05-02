@@ -6,10 +6,9 @@ include("indexLogic.php");
 
 
 initializeDisplayRandCard();
-initializeRandCardUrl();
 
 $displayString = updateDisplayString($_SESSION['showRandCard']);
-$randCardUrl = $_SESSION['randCardUrl'];
+$randCardJson = $_SESSION['randCardJson'];
 
 // username and logged in don't need to be removed with session unset
 $username = $_SESSION['username'];
@@ -18,11 +17,6 @@ session_unset();
 $_SESSION['username'] = $username;
 $_SESSION['isLoggedIn'] = $isLoggedIn;
 
-$searchConditions = '';
-$testCards = returnCardJson($searchConditions,1);
-echo '<div>';
-showCardImage($testCards,0);
-echo '</div>';
 
 ?>
 
@@ -39,13 +33,7 @@ echo '</div>';
     </head>
 
     <body>
-
-    <div class="shitButton" id="shitButton">
-
-            <button id="MyId" type="submit" name="randomCard" value="randomCard" onclick="onClick(this.id)">Shit button</button>  
-             
-        </div>
-        
+  
        <h1>
         You've arived at the mtg global search hub "Magic GSH"! <br>
         Start by searching for any card by name or even grabbing a random card from all of magic <br>
@@ -63,7 +51,9 @@ echo '</div>';
         
         <div class="randomImageDiv" id="randomImageDiv" style="<?php echo $displayString?>">
 
-        <img src='<?php echo $randCardUrl?>' style="width:250px;height:350px;" alt="Random Magic Card"> 
+        <?php
+            showCardImage($randCardJson,0);
+        ?>
 
         </div>
 

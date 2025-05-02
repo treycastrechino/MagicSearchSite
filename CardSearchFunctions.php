@@ -182,11 +182,18 @@ function showAllCardsFromSearch($cardJson){
 
 }
 
+function returnCardFromMultiverseId($multiverseID){
 
+    $searchCondition = addSearchCondition('','multiverseid', $multiverseID);
+    $cardJson = returnCardJson($searchCondition,1);
+    return $cardJson;
+
+}
 
 // this function is nice for a proof of concept but there are data limits on the API (5000 requests/hr).
 // The newest card set (tarkir dragonstorm) ends around 700,000 (multiverseid) but there are gaps and this function may run 15 times before returning a valid result.
-function returnRandomCardUrl(){
+// will only return cards with images attached
+function returnRandomCardJson(){
 
     $cardJson = null;
     while($cardJson == null){
@@ -216,8 +223,7 @@ function returnRandomCardUrl(){
 
     }
 
-    $myImageUrl = $cardJson['cards'][0]['imageUrl'];
-    return $myImageUrl;
+    return $cardJson;
 }
 
 ?>

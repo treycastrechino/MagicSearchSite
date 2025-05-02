@@ -12,20 +12,6 @@ function initializeDisplayRandCard(){
     }
 }
 
-function initializeRandCardUrl(){
-
-    if (isset($_SESSION['randCardUrl'])){
-
-
-    }
-    else{
-    
-        $_SESSION['randCardUrl'] = '';
-    }
-}
-
-
-
 
 function updateDisplayString($displayState){
 

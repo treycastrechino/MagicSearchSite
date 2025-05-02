@@ -4,7 +4,7 @@
 
 .entirePage{
 
-    background-image: url(Images/grayTexture.jpg);
+    background-image: url(http://localhost/MagicSearchSite/Images/grayTexture.jpg);
     background-size: contain;
     background-repeat: repeat-y;
     width: 60%;
