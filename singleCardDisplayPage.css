@@ -9,6 +9,28 @@ body {
     
 }
 
+.imageAndCardInfo{
+
+    display: flex;
+}
+.infoText{
+
+    text-align: left;
+    margin-left: 20%;
+}
+
+.cardLegality{
+
+    margin-top: 20px;
+    text-align: center;
+}
+
+.legality{
+
+    display: inline;
+    margin-right: 5px;
+}
+
 div{
 
     text-align: center;
@@ -22,8 +44,7 @@ img {
 
     padding: 20px;
     border-radius: 35px;
-    align-items: center;
-    margin-left: auto;
+    margin-left: 20%;
     margin-right: auto;
 }
 

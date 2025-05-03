@@ -10,7 +10,7 @@ $id = getCardID();
 $cardData = returnCardFromMultiverseId($id);
 $imageUrl = $cardData['cards'][0]['imageUrl'];
 
-displayCardInformation($cardData);
+
 
 ?>
 <!DOCTYPE html>
@@ -24,15 +24,33 @@ displayCardInformation($cardData);
 
     <body>
 
-        <div>
+        <div class="imageAndCardInfo">
 
-        <img src="<?php echo $imageUrl; ?>" style="width:250px;height:350px;">
+            <div class="imageContainer">
+
+            <img src="<?php echo $imageUrl; ?>" style="width:250px;height:350px;">
+
+            </div>
+
+            <div class="cardInformation">
+
+            <?php displayCardInformation($cardData); ?>
+            
+            </div>
 
         </div>
 
-        <div class="cardInformation">
+        <div class="cardLegality">
+            <h2>Legal Sets</h2>
+            <?php showLegality($cardData); ?>
+            
+        </div>
 
 
+        <div class="cardRulings">
+            <h2>Card Rulings</h2>
+        <?php showRulings($cardData); ?>
+        
         </div>
 
 
