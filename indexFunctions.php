@@ -12,7 +12,17 @@ function initializeDisplayRandCard(){
     }
 }
 
+function initializeRandomCardJson(){
 
+    if (isset($_SESSION['randomCardJson'])){
+
+
+    }
+    else{
+    
+        $_SESSION['randomCardJson'] = null;
+    }
+}
 function updateDisplayString($displayState){
 
     if($displayState == true){

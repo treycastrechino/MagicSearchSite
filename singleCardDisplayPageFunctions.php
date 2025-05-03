@@ -175,15 +175,18 @@ function showRulings($cardJson){
 
     for($i = 0; $i < $rulingsCount; $i ++){
 
-        $date = $rulings[$i]['date'];
-        $htmlDate = '<p>Date: ' . $date;
-        $htmlDate = $htmlDate . '</p>';
-        echo $htmlDate;
+        if($rulings[$i]['date'] != ''){
 
-        $text = $rulings[$i]['text'];
-        $htmlText = '<p>' . $text;
-        $htmlText = $htmlText . '</p>';
-        echo $htmlText;
+            $date = $rulings[$i]['date'];
+            $htmlDate = '<p>Date: ' . $date;
+            $htmlDate = $htmlDate . '</p>';
+            echo $htmlDate;
+    
+            $text = $rulings[$i]['text'];
+            $htmlText = '<p>' . $text;
+            $htmlText = $htmlText . '</p>';
+            echo $htmlText;
+        }
 
     }
 }

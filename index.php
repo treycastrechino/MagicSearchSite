@@ -6,9 +6,11 @@ include("indexLogic.php");
 
 
 initializeDisplayRandCard();
+initializeRandomCardJson();
 
+$showCard = $_SESSION['showRandCard'];
 $displayString = updateDisplayString($_SESSION['showRandCard']);
-$randCardJson = $_SESSION['randCardJson'];
+$randCardJson = $_SESSION['randomCardJson'];
 
 // username and logged in don't need to be removed with session unset
 $username = $_SESSION['username'];
@@ -52,7 +54,13 @@ $_SESSION['isLoggedIn'] = $isLoggedIn;
         <div class="randomImageDiv" id="randomImageDiv" style="<?php echo $displayString?>">
 
         <?php
-            showCardImage($randCardJson,0);
+
+            if($showCard){
+
+                showCardImage($randCardJson,0);
+
+            }
+            
         ?>
 
         </div>
