@@ -94,6 +94,7 @@ $_SESSION['isLoggedIn'] = $isLoggedIn;
                     <option value="Sorcery">Sorcery</option>
                     <option value="Enchantment">Enchantment</option>
                     <option value="Planeswalker">Planeswalker</option>
+                    <option value="Artifact">Artifact</option>
                 </select>
                 <br>
                 <button class="searchCardButton" type="submit" name="searchCard" value="searchCard">Search</button>

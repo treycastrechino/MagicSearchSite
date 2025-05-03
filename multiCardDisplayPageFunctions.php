@@ -15,7 +15,7 @@ function initializeSearchConditionColor($color){
 
 }
 
-function initalizeSearchConditionName(){
+function initializeSearchConditionName(){
 
     if(isset($_SESSION['cardSearchName'])){
 
@@ -26,7 +26,7 @@ function initalizeSearchConditionName(){
         $_SESSION['cardSearchName'] = '';
     }
 }
-function initalizeSearchConditionFormat(){
+function initializeSearchConditionFormat(){
 
     if(isset($_SESSION['cardSearchFormat'])){
 
@@ -37,18 +37,101 @@ function initalizeSearchConditionFormat(){
         $_SESSION['cardSearchFormat'] = '';
     }
 }
-function initalizeSearchConditionCardType(){
+function initializeSearchConditionCardType(){
 
     if(isset($_SESSION['cardSearchCardType'])){
 
-        // the card type was chosen when the page loaded
+        // the format was chosen when the page loaded
     }
     else{
 
         $_SESSION['cardSearchCardType'] = '';
     }
 }
-function initalizeCurrentPage(){
+function initializeSearchConditionRarity(){
+
+    if(isset($_SESSION['cardSearchRarity'])){
+
+        // the card type was chosen when the page loaded
+    }
+    else{
+
+        $_SESSION['cardSearchRarity'] = '';
+    }
+}
+
+function initializeSearchConditionSet(){
+
+    if(isset($_SESSION['cardSearchSet'])){
+
+        // the card type was chosen when the page loaded
+    }
+    else{
+
+        $_SESSION['cardSearchSet'] = '';
+    }
+}
+
+function initializeSearchConditionCmc(){
+
+    if(isset($_SESSION['cardSearchCmc'])){
+
+        // the card type was chosen when the page loaded
+    }
+    else{
+
+        $_SESSION['cardSearchCmc'] = '';
+    }
+}
+
+function initializeSearchConditionSubtype(){
+
+    if(isset($_SESSION['cardSearchSubtype'])){
+
+        // the card type was chosen when the page loaded
+    }
+    else{
+
+        $_SESSION['cardSearchSubtype'] = '';
+    }
+}
+
+function initializeSearchConditionPower(){
+
+    if(isset($_SESSION['cardSearchPower'])){
+
+        // the card type was chosen when the page loaded
+    }
+    else{
+
+        $_SESSION['cardSearchPower'] = '';
+    }
+}
+
+function initializeSearchConditionToughness(){
+
+    if(isset($_SESSION['cardSearchToughness'])){
+
+        // the card type was chosen when the page loaded
+    }
+    else{
+
+        $_SESSION['cardSearchToughness'] = '';
+    }
+}
+
+function initializeSearchConditionText(){
+
+    if(isset($_SESSION['cardSearchText'])){
+
+        // the card type was chosen when the page loaded
+    }
+    else{
+
+        $_SESSION['cardSearchText'] = '';
+    }
+}
+function initializeCurrentPage(){
 
     if(isset($_SESSION['currentPage'])){
 
@@ -60,7 +143,7 @@ function initalizeCurrentPage(){
     }
 }
 
-function initalizeTotalPages(){
+function initializeTotalPages(){
 
     if(isset($_SESSION['totalPageCount'])){
 
@@ -150,12 +233,50 @@ function buildSearchConditions(){
     // the dropdown menu will always have something selected so this makes the condition build process easier because it is always more than one
 
     $searchConditions = '';
-    $searchConditions = addSearchCondition($searchConditions, 'gameFormat', $_SESSION['cardSearchFormat']);
-    $searchConditions = addSearchCondition($searchConditions, 'types', $_SESSION['cardSearchCardType']);
+    if($_SESSION['cardSearchFormat'] != ''){
+
+        $searchConditions = addSearchCondition($searchConditions, 'gameFormat', $_SESSION['cardSearchFormat']);
+    }
+    if($_SESSION['cardSearchCardType'] != ''){
+
+        $searchConditions = addSearchCondition($searchConditions, 'types', $_SESSION['cardSearchCardType']);
+    }
+    
     if($_SESSION['cardSearchName'] != ''){
 
         $searchConditions = addSearchCondition($searchConditions, 'name', $_SESSION['cardSearchName']);
     }
+    if($_SESSION['cardSearchRarity'] != ''){
+
+        $searchConditions = addSearchCondition($searchConditions, 'rarity', $_SESSION['cardSearchRarity']);
+    }
+    if($_SESSION['cardSearchSet'] != ''){
+
+        $searchConditions = addSearchCondition($searchConditions, 'set', $_SESSION['cardSearchSet']);
+    }
+    if($_SESSION['cardSearchCmc'] != ''){
+
+        $searchConditions = addSearchCondition($searchConditions, 'cmc', $_SESSION['cardSearchCmc']);
+    }
+    if($_SESSION['cardSearchSubtype'] != ''){
+        
+        $searchConditions = addSearchCondition($searchConditions, 'subtypes', $_SESSION['cardSearchSubtype']);
+    }
+    if($_SESSION['cardSearchPower'] != ''){
+
+        $searchConditions = addSearchCondition($searchConditions, 'power', $_SESSION['cardSearchPower']);
+    }
+    if($_SESSION['cardSearchToughness'] != ''){
+
+        $searchConditions = addSearchCondition($searchConditions, 'toughness', $_SESSION['cardSearchToughness']);
+    }
+    if($_SESSION['cardSearchText'] != ''){
+
+        $rulesTextFormatted = str_replace(' ', '_', $_SESSION['cardSearchText']);
+        $searchConditions = addSearchCondition($searchConditions, 'text', $rulesTextFormatted);
+    }
+
+    
     
     $colorSearch = createColorSearchCondition();
     $searchConditions = $searchConditions . $colorSearch;

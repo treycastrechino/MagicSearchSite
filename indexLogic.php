@@ -25,8 +25,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
             foreach($_POST['color'] as $color){
 
-                echo $color . ' was chosen';
-
                 $_SESSION[$color] = true;
 
             }
@@ -37,13 +35,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         }
 
         $_SESSION['cardSearchFormat'] = $_POST['gameFormat'];
-        echo $_SESSION['cardSearchFormat'];
-
         $_SESSION['cardSearchCardType'] = $_POST['cardType'];
-        echo $_SESSION['cardSearchCardType'];
-        
         $_SESSION['cardSearchName'] = $_POST['cardName'];
-        echo 'card name is ' . $_SESSION['cardSearchName'];
 
         header("Location: http://localhost/MagicSearchSite/multiCardDisplayPage.php");
         exit();

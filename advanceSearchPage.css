@@ -11,6 +11,11 @@ body {
     
 }
 
+.cardSearch{
+
+    margin-top: 40px;
+}
+
 p {
 
     color: rgb(224, 222, 218);
@@ -24,6 +29,7 @@ h1 {
     margin-bottom: 20px;
 }
 
+
 label{
     font-family: 'exo',sans-serif;
     font-size: 16px;
@@ -31,14 +37,28 @@ label{
     color: rgb(224, 222, 218);
 }
 
+.rulesText{
+
+    margin-bottom: 20px;
+    width: 80%;
+}
+
 option{
     font-family: 'exo',sans-serif;
     font-size: 16px;
 }
 
-.dropDownLabel{
-    font-family: 'exo',sans-serif;
-    font-size: 24;
+
+.allDropdowns{
+
+    text-align: right;
+    margin-right: 35%;
+}
+
+.cmcContainer{
+
+    max-height: 80px;
+    overflow-y: scroll;
 }
 
 select{
@@ -46,6 +66,8 @@ select{
     margin-bottom: 30px;
     font-size: 24;
     border-radius: 6px;
+    background-color: #3b3f49;
+    color: #fff;
 }
 
 .colorCheckbox{
@@ -54,12 +76,12 @@ select{
 
 input {
     padding: 12px;
-    background-color: #eee;
+    background-color: #3b3f49;
+    color: rgb(224, 222, 218);
     border-radius: 6px;
     border: none;
     outline: none;
     font-size: 16px;
-    color: #333;
     
 }
 
@@ -134,5 +156,5 @@ button {
 }
 
 button:hover {
-    background: #6884d3;
+    background: #35446b;
 }

@@ -3,16 +3,24 @@
 include("siteHeader.php");
 include("multiCardDisplayPageLogic.php");
 
-initalizeSearchConditionName();
+
 initializeSearchConditionColor('u');
 initializeSearchConditionColor('g');
 initializeSearchConditionColor('r');
 initializeSearchConditionColor('b');
 initializeSearchConditionColor('w');
-initalizeSearchConditionFormat();
-initalizeSearchConditionCardType();
-initalizeCurrentPage();
-initalizeTotalPages();
+initializeSearchConditionName();
+initializeSearchConditionFormat();
+initializeSearchConditionCardType();
+initializeSearchConditionRarity();
+initializeSearchConditionSet();
+initializeSearchConditionCmc();
+initializeSearchConditionSubtype();
+initializeSearchConditionPower();
+initializeSearchConditionToughness();
+initializeSearchConditionText();
+initializeCurrentPage();
+initializeTotalPages();
 
 $cardsPerPage = 20;
 $searchConditions = buildSearchConditions();
