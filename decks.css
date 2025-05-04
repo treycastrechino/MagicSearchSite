@@ -19,6 +19,30 @@ h1 {
     margin-bottom: 20px;
 }
 
+.addDeckButton{
+
+    width: 60%;
+    margin-left: 20%;
+    margin-bottom: 40px;
+    background: #155236;
+}
+
+.deckDisplay{
+
+    text-align: center;
+}
+
+.deckDiv{
+
+    align-items: center;
+}
+
+.imageDiv{
+
+    display: inline;
+    align-items: center;
+}
+
 label{
     font-family: 'exo',sans-serif;
     font-size: 16px;
@@ -76,13 +100,6 @@ p {
     padding: 30px;
 }
 
-form{
-    width: 50%;
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-}
 
 .cardSearch {
     font-size: 34px;
@@ -90,35 +107,15 @@ form{
     border-radius: 10px;
 }
 
-.searchCardButton{
-    font-family: 'exo',sans-serif;
-    width: 80%;
-    padding: 12px;
-    background: #3b3f49;
-    border-radius: 6px;
-    border: none;
-    cursor: pointer; /* changes to pointer to help user know the button does something*/
-    font-size: 16px;
-    color: #fff;
-    font-weight: 500; /* adds a little bold effect to make the button stand out*/
-    margin-bottom: 20px;
-    transition: 0.5s; /*transition effect when hovered over*/
-}
-
-.randomImageDiv{
-    display: block;
-    text-align: center;
-    border-radius: 10px;
-    padding: 30px;
-}
 
 img{
     padding: 12px;
+    display: inline;
 }
 
 button {
     font-family: 'exo',sans-serif;
-    width: 100%;
+    width: 50%;
     justify-content: center;
     align-items: center;
     padding: 12px;
@@ -129,7 +126,7 @@ button {
     font-size: 16px;
     color: #fff;
     font-weight: 500; /* adds a little bold effect to make the button stand out*/
-    margin-bottom: 20px;
+    margin-top: 20px;
     transition: 0.5s; /*transition effect when hovered over*/
 }
 

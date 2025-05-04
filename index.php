@@ -15,9 +15,11 @@ $randCardJson = $_SESSION['randomCardJson'];
 // username and logged in don't need to be removed with session unset
 $username = $_SESSION['username'];
 $isLoggedIn = $_SESSION['isLoggedIn'];
+$userId = $_SESSION['userId'];
 session_unset();
 $_SESSION['username'] = $username;
 $_SESSION['isLoggedIn'] = $isLoggedIn;
+$_SESSION['userId'] = $userId;
 
 
 ?>

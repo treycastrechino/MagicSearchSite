@@ -8,6 +8,18 @@ function getCardID(){
     return $id;
 }
 
+function initializeDeckArray(){
+
+    if(isset($_SESSION['userDecks'])){
+
+        
+    }
+    else{
+
+        $_SESSION['userDecks'] = array();
+    }
+}
+
 function displayCardInformation($cardJson){
 
 if(isset($cardJson['cards']['0']['name'])){
@@ -233,6 +245,41 @@ function showLegality($cardJson){
         echo $html;
 
     }
+}
+
+function showDeckLists($deckArray){
+
+    $arrayValues = array_values($deckArray);
+
+    echo'<label for="deckList">Deck:</label>';
+    
+    echo '<select name="deckList" id="deckList">';
+    echo '<option value="">No Selection</option>';
+
+    for($i = 0;$i < count($arrayValues);$i++){
+    
+        $html = '<option value="' . $arrayValues[$i];
+        $html = $html . '">';
+        $html = $html . $arrayValues[$i];
+        $html = $html . '</option>';
+        echo $html;
+    }
+    echo '</select>';
+
+}
+
+
+function updateDisplayString($displayState){
+
+    if($displayState == true){
+
+        return 'display:';
+    }
+    else{
+
+        return 'display: none';
+    }
+
 }
 
 ?>

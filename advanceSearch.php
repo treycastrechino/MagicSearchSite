@@ -5,9 +5,11 @@ include("advanceSearchLogic.php");
 
 $username = $_SESSION['username'];
 $isLoggedIn = $_SESSION['isLoggedIn'];
+$userId = $_SESSION['userId'];
 session_unset();
 $_SESSION['username'] = $username;
 $_SESSION['isLoggedIn'] = $isLoggedIn;
+$_SESSION['userId'] = $userId;
 ?>
 <!DOCTYPE html>
 <html lang="en">

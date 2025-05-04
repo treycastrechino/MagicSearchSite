@@ -36,6 +36,18 @@ function updateDisplayString($displayState){
 
 }
 
+function initializeUserId(){
+
+    if (isset($_SESSION['userId'])){
+
+
+    }
+    else{
+    
+        $_SESSION['userId'] = '';
+    }
+
+}
 
 
 

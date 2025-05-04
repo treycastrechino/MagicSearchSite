@@ -145,6 +145,7 @@ function loginEmailPasswordCheck($queryResults, $password){
 
             $_SESSION['username'] = $user['username'];
             $_SESSION['email'] = $user['email'];
+            $_SESSION['userId'] = $user['id'];
             $_SESSION['isLoggedIn'] = true;
             header("Location: index.php");
             exit();

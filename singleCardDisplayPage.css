@@ -9,6 +9,37 @@ body {
     
 }
 
+.saveDeckDiv{
+
+    margin-top: 20px;
+}
+
+button{
+    font-family: 'exo',sans-serif;
+    font-size: 16px;
+    color: #fff;
+    background: #195168;
+    border-radius: 6px;
+}
+
+
+select{
+    font-family: 'exo',sans-serif;
+    margin-bottom: 30px;
+    font-size: 20;
+    border-radius: 6px;
+    background-color: #3b3f49;
+    color: #fff;
+    display: inline;
+}
+
+
+label{
+    font-family: 'exo',sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: rgb(224, 222, 218);
+}
 .imageAndCardInfo{
 
     display: flex;

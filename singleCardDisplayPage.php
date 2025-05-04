@@ -3,12 +3,17 @@
 
 include("siteHeader.php");
 include("singleCardDisplayPageFunctions.php");
+include("deckFunctions.php");
 include("cardSearchFunctions.php");
 
 
 $id = getCardID();
 $cardData = returnCardFromMultiverseId($id);
 $imageUrl = $cardData['cards'][0]['imageUrl'];
+$displayString = updateDisplayString($_SESSION['isLoggedIn']);
+initializeDeckArray();
+$userDeckArray = $_SESSION['userDecks'];
+
 
 
 
@@ -23,6 +28,17 @@ $imageUrl = $cardData['cards'][0]['imageUrl'];
     </head>
 
     <body>
+
+    <div class="saveDeckDiv" style="<?php echo $displayString?>">
+
+    <form>
+
+        <?php showDeckLists($userDeckArray); ?>
+        <button type="submit" name="saveCardToDeck" value="saveCardToDeck">Save card to deck</button>
+
+        </form>
+    </div>
+
 
         <div class="imageAndCardInfo">
 
