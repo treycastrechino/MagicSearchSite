@@ -1,32 +1,14 @@
 
 <?php
 
-include("siteHeader.php");
-include("decksLogic.php");
+    include("siteHeader.php");
+    include("decksLogic.php");
 
-$_SESSION['userDecks'] = array(
 
-    array(
-        
-        0 => 'Deck 1',
-        1 => '660317',
-        2 => '660317'
-    
-    ),
 
-    array (
+    openConnection();
+    setUserDecks($connectionVariable,$_SESSION['userId']);
 
-        0 => 'Deck 2',
-        1 => '660317',
-        2 => '660317'
-    )
-    );
-
-    $databaseStore = json_encode($_SESSION['userDecks']);
-    echo $databaseStore;
-    $returnedValue = json_decode($databaseStore);
-    var_dump($returnedValue);
-    $_SESSION['userDecks'] = $returnedValue;
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -46,7 +28,6 @@ $_SESSION['userDecks'] = array(
         <div class="deckDisplay">
         <?php displayAllDecks(); ?>
         </div>
-
 
         </form>
 

@@ -7,6 +7,7 @@ include("indexLogic.php");
 
 initializeDisplayRandCard();
 initializeRandomCardJson();
+initializeUserId();
 
 $showCard = $_SESSION['showRandCard'];
 $displayString = updateDisplayString($_SESSION['showRandCard']);

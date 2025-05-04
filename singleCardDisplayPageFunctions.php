@@ -1,11 +1,23 @@
 <?php
 
+
+
 function getCardID(){
 
-    $full_link = $_SERVER['REQUEST_URI'];
-    $linkArray = explode('=',$full_link);
-    $id = $linkArray['1'];
-    return $id;
+    if(isset($_SESSION['cardId'])){
+
+
+    }
+    else{
+
+        $full_link = $_SERVER['REQUEST_URI'];
+        $linkArray = explode('=',$full_link);
+        $id = $linkArray['1'];
+        $_SESSION['cardId'] = $id;
+        header("Location: http://localhost/MagicSearchSite/singleCardDisplayPage.php");
+        exit();
+    }
+
 }
 
 function initializeDeckArray(){
@@ -17,6 +29,18 @@ function initializeDeckArray(){
     else{
 
         $_SESSION['userDecks'] = array();
+    }
+}
+
+function initializeCardAddedMessage(){
+
+    if(isset($_SESSION['cardAddedMessage'])){
+
+        
+    }
+    else{
+
+        $_SESSION['cardAddedMessage'] = '';
     }
 }
 
@@ -249,18 +273,17 @@ function showLegality($cardJson){
 
 function showDeckLists($deckArray){
 
-    $arrayValues = array_values($deckArray);
 
     echo'<label for="deckList">Deck:</label>';
     
     echo '<select name="deckList" id="deckList">';
     echo '<option value="">No Selection</option>';
 
-    for($i = 0;$i < count($arrayValues);$i++){
+    for($i = 0;$i < count($deckArray);$i++){
     
-        $html = '<option value="' . $arrayValues[$i];
+        $html = '<option value="' . $deckArray[$i][0];
         $html = $html . '">';
-        $html = $html . $arrayValues[$i];
+        $html = $html . $deckArray[$i][0];
         $html = $html . '</option>';
         echo $html;
     }
@@ -280,6 +303,15 @@ function updateDisplayString($displayState){
         return 'display: none';
     }
 
+}
+
+function showCardAddMessage(){
+
+    $html = '<p>';
+    $html = $html . $_SESSION['cardAddedMessage'];
+    $html = $html . '</p>';
+    echo $html;
+    $_SESSION['cardAddedMessage'] = '';
 }
 
 ?>

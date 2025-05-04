@@ -2,16 +2,20 @@
 <?php
 
 include("siteHeader.php");
-include("singleCardDisplayPageFunctions.php");
 include("deckFunctions.php");
-include("cardSearchFunctions.php");
+include("singleCardDisplayPageLogic.php");
 
 
-$id = getCardID();
+
+getCardID();
+$id = $_SESSION['cardId'];
 $cardData = returnCardFromMultiverseId($id);
 $imageUrl = $cardData['cards'][0]['imageUrl'];
 $displayString = updateDisplayString($_SESSION['isLoggedIn']);
 initializeDeckArray();
+initializeCardAddedMessage();
+openConnection();
+setUserDecks($connectionVariable,$_SESSION['userId']);
 $userDeckArray = $_SESSION['userDecks'];
 
 
@@ -31,7 +35,7 @@ $userDeckArray = $_SESSION['userDecks'];
 
     <div class="saveDeckDiv" style="<?php echo $displayString?>">
 
-    <form>
+    <form action="singleCardDisplayPage.php" method="post">
 
         <?php showDeckLists($userDeckArray); ?>
         <button type="submit" name="saveCardToDeck" value="saveCardToDeck">Save card to deck</button>
@@ -39,6 +43,7 @@ $userDeckArray = $_SESSION['userDecks'];
         </form>
     </div>
 
+    <?php showCardAddMessage(); ?>
 
         <div class="imageAndCardInfo">
 

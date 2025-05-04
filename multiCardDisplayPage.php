@@ -22,6 +22,8 @@ initializeSearchConditionText();
 initializeCurrentPage();
 initializeTotalPages();
 
+$_SESSION['cardId'] = null;
+
 $cardsPerPage = 20;
 $searchConditions = buildSearchConditions();
 $totalCardCount = getTotalCardCountFromSearchConditions($searchConditions);

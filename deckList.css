@@ -92,6 +92,16 @@ p {
     color: rgb(224, 222, 218);
 }
 
+.nameChange{
+
+    margin-left: 20%;
+}
+
+.nameButton{
+
+    width: 20%;
+}
+
 
 .randomCardSearch {
     display: block;
