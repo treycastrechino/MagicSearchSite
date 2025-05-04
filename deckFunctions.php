@@ -125,7 +125,7 @@ function addCardToDeck($connectionVariable,$userId,$deckName,$cardId){
     $decks = json_decode($userData['decks']);
     for($i = 0; $i < count($decks); $i ++){
 
-        if($decks[$i][0] = $deckName){
+        if($decks[$i][0] == $deckName){
 
             array_push($decks[$i],$cardId);
         }
