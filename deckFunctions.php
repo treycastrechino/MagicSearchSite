@@ -181,7 +181,6 @@ function displayAllCardsInDeck($deck){
             $html = $html . $i;
             $html = $html . '">';
             $html = $html . 'Remove Card';
-            $html = $html . $i;
             $html = $html . '</button>';
             echo $html;
 
