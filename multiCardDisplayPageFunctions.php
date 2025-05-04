@@ -19,7 +19,7 @@ function initializeSearchConditionName(){
 
     if(isset($_SESSION['cardSearchName'])){
 
-        // the name was chosen when the page loaded
+        
     }
     else{
 
@@ -30,7 +30,7 @@ function initializeSearchConditionFormat(){
 
     if(isset($_SESSION['cardSearchFormat'])){
 
-        // the format was chosen when the page loaded
+        
     }
     else{
 
@@ -41,7 +41,7 @@ function initializeSearchConditionCardType(){
 
     if(isset($_SESSION['cardSearchCardType'])){
 
-        // the format was chosen when the page loaded
+       
     }
     else{
 
@@ -52,7 +52,7 @@ function initializeSearchConditionRarity(){
 
     if(isset($_SESSION['cardSearchRarity'])){
 
-        // the card type was chosen when the page loaded
+        
     }
     else{
 
@@ -64,7 +64,7 @@ function initializeSearchConditionSet(){
 
     if(isset($_SESSION['cardSearchSet'])){
 
-        // the card type was chosen when the page loaded
+        
     }
     else{
 
@@ -76,7 +76,7 @@ function initializeSearchConditionCmc(){
 
     if(isset($_SESSION['cardSearchCmc'])){
 
-        // the card type was chosen when the page loaded
+        
     }
     else{
 
@@ -88,7 +88,7 @@ function initializeSearchConditionSubtype(){
 
     if(isset($_SESSION['cardSearchSubtype'])){
 
-        // the card type was chosen when the page loaded
+        
     }
     else{
 
@@ -100,7 +100,7 @@ function initializeSearchConditionPower(){
 
     if(isset($_SESSION['cardSearchPower'])){
 
-        // the card type was chosen when the page loaded
+
     }
     else{
 
@@ -112,7 +112,7 @@ function initializeSearchConditionToughness(){
 
     if(isset($_SESSION['cardSearchToughness'])){
 
-        // the card type was chosen when the page loaded
+        
     }
     else{
 
@@ -124,7 +124,7 @@ function initializeSearchConditionText(){
 
     if(isset($_SESSION['cardSearchText'])){
 
-        // the card type was chosen when the page loaded
+        
     }
     else{
 
@@ -294,17 +294,6 @@ function createImageArray($cardJson){
             showCardImage($cardJson,$i);
             echo'<br>';
 
-            /* $imageUrl = $cardJson['cards'][$i]['imageUrl'];
-
-            $htmlImageStatement =  '
-            <div class="imageDiv" id="imageDiv">
-
-                <img src="'. $imageUrl .'" style="width:250px;height:350px;"> 
-
-            </div>
-            ';
-            
-            echo $htmlImageStatement; */
         }
         else{
 

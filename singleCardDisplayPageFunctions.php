@@ -227,7 +227,7 @@ function showRulings($cardJson){
     }
 }
 
-// remember that the results only show formats that the card is legal in not banned formats
+// the results only show formats that the card is legal in not banned formats
 function showLegality($cardJson){
 
     if(isset($cardJson['cards']['0']['legalities'])){

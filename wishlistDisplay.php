@@ -16,7 +16,7 @@ include("siteHeader.php");
     <body>
         
 
-        <p>This is the contact us page</p>
+        <p>This is the wishlist page</p>
 
 
     </body>

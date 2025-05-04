@@ -2,6 +2,7 @@
 
 include("cardSearchFunctions.php");
 
+// These are test values for what would be an array of every subtype or set in the game.
 
 $setNames = array(
 

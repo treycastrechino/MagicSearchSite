@@ -1,6 +1,8 @@
 
 <?php
 
+    // The deck array format is that every deck is stored in a decks array
+    // and every deck index 0 will be the name of the deck followed by multiverse IDs for the cards in the deck.
     include("siteHeader.php");
     include("decksLogic.php");
 
